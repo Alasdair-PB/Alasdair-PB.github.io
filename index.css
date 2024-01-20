@@ -1,0 +1,30 @@
+.title {
+  font-size: 24px; 
+  font-weight: bold;
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+
+.card {
+    max-width: 300px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 300px; 
+    flex: 1 0 calc(33.33% - 20px); 
+    -webkit-flex: 1 0 calc(33.33% - 20px);
+}
+
+.card-container {
+  display: -webkit-flex; /* For older versions of Chrome */
+  display: flex;
+  -webkit-flex-wrap: wrap; /* For older versions of Chrome */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card img {
+    max-width: 100%; 
+    height: auto; 
+}

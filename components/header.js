@@ -1,45 +1,43 @@
-class Header extends HTMLElement {
+class Card extends HTMLElement {
     constructor() {
-      super();
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.title = '';
+        this.text = '';
+        this.image = '';
+        this.blog = '';
     }
-    connectedCallback() {
-        this.innerHTML = `
-        <style>
-            nav {
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color:  #0a0a23;
-            }
 
-            ul {
-            padding: 0;
-            }
-            
-            a {
-            font-weight: 700;
-            margin: 0 25px;
-            color: #fff;
-            text-decoration: none;
-            }
-            
-            a:hover {
-            padding-bottom: 5px;
-            box-shadow: inset 0 -2px 0 0 #fff;
-            }
-        </style>
-        <header>
-            <nav>
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            </nav>
-        </header>
+    connectedCallback() {
+        this.render();
+    }
+
+    render() {
+        this.shadowRoot.innerHTML = `
+            <link rel="stylesheet" href="index.css">
+            <div class="card">
+                <div class="content-container">
+                    <h2>${this.title}</h2>
+                    <p>${this.text}</p>
+                    <img src=${this.image}>
+                    <li><a href=></i>${this.blog}</a></li>
+
+                    ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
+                </div>
+            </div>
         `;
+    }
+
+    static get observedAttributes() {
+        return ['title', 'text', 'image', 'blog'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this[name] = newValue;
+            this.render();
+        }
     }
 }
 
-customElements.define('header-component', Header);
+customElements.define('card-component', Card);
