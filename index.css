@@ -5,21 +5,20 @@
   margin-bottom: 10px; 
 }
 
-
 .card {
-    max-width: 300px; 
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-width: 300px; 
-    flex: 1 0 calc(33.33% - 20px); 
-    -webkit-flex: 1 0 calc(33.33% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 0 calc(33.33% - 20px); 
+  -webkit-flex: 1 0 calc(33.33% - 20px);
+  box-sizing: border-box; 
+  max-width: 300px; 
 }
 
 .card-container {
-  display: -webkit-flex; /* For older versions of Chrome */
+  display: -webkit-flex; 
   display: flex;
-  -webkit-flex-wrap: wrap; /* For older versions of Chrome */
+  -webkit-flex-wrap: wrap; 
   flex-wrap: wrap;
   gap: 20px;
 }

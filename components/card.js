@@ -21,7 +21,6 @@ class Card extends HTMLElement {
                     <p>${this.text}</p>
                     <img src=${this.image}>
                     <li><a href=></i>${this.blog}</a></li>
-
                     ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
                 </div>
             </div>
