@@ -16,13 +16,10 @@ class Card extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="index.css">
             <div class="card">
-                <div class="content-container">
-                    <h2>${this.title}</h2>
-                    <p>${this.text}</p>
-                    <img src=${this.image}>
-                    <li><a href=></i>${this.blog}</a></li>
-                    ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
-                </div>
+                <h2>${this.title}</h2>
+                <p>${this.text}</p>
+                <img src=${this.image}>
+                ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
             </div>
         `;
     }
