@@ -3,46 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="components/json.js" type="text/javascript" defer></script>
+    <script src="components/blog.js" type="text/javascript" defer></script>
     <script src="components/card.js" type="text/javascript" defer></script>
+    <script src="components/project.js" type="text/javascript" defer></script>
     <script src="components/blogCard.js" type="text/javascript" defer></script>
-
 </head>
+
 <body>
+    <div class="main-content">
 
-    <h1 class="title">Your Title Here</h1>
+        <div class="card-container">
+            <h1 class="title">Alasdair PB</h1>
+            <p>Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.</p>
+        </div>
 
-    <p>This is a paragraph.</p>
-
-    <div class="card-container">
-
-        <blog-page 
-            title= " title "
-            json-folder-path="blog/gulls/entries"> 
-        </blog-page>
-    
-        <card-component
-            title="cardy card Title"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="Misc/Img/SetUpGuideA.PNG"
-            blog="https://google.com">
-        </card-component>
-
-        <card-component 
-            title="Card Title"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="Misc/Img/SetUpGuideA.PNG"
-            blog="https://google.com">
-        </card-component>
-
-        <blog-card-component
-            title="Card Title"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            image="Misc/Img/SetUpGuideA.PNG"
-            blog="https://google.com">
-        </blog-card-component>
+        <div class="card-container">    
+            <project-component
+                path = "blog">
+            </project-component>
+        </div>
+        
+        <div class="card-container">     
+            <blog-component 
+                path="blog/gulls">
+            </blog-component>
+        </div>
     </div>
-
-
-
-   <!--  <img src="Misc/Img/SetUpGuideA.PNG"> -->
 </body>

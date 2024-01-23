@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #4CAF50; /* Define a primary color */
+  --secondary-color: #6db76f;
+  --spacing: 10px; /* Define a standard spacing */
+  --main-font: 'Arial', sans-serif; /* Define a font */
+}
+
 .title {
   font-size: 24px; 
   font-weight: bold;
@@ -5,22 +12,97 @@
   margin-bottom: 10px; 
 }
 
-.card {
-  max-width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  flex: 1 0 calc(33.33% - 20px); 
-  box-sizing: border-box; 
+body {
+  background-image: url(Misc/Img/SetUpGuideA.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  justify-content: center; 
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  width: 75%; 
+  height: 100vh; 
+  background-color: var(--primary-color);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-container {
+  width: 80%; 
+  max-width: 1200px; 
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+.card {
+  margin: auto;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  background-color:var(--secondary-color);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1 0 calc(33.33% - 20px); 
+  box-sizing: border-box; 
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .card img {
-  max-width: 100%;
+  align-self: center;
+  width: 200px;  
+  height: 100px; 
+  object-fit: cover;
+}
+
+.blog {
+  max-width: 900px;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color:var(--secondary-color);
+
+  border-radius: 8px;
+  flex: 1 0 calc(33.33% - 20px); 
+  box-sizing: border-box; 
+  overflow: auto;
+}
+
+.blog:nth-of-type(odd) img {
+  float: right;
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.blog:nth-of-type(even) img {
+  float: left;
+  max-width: 50%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.blog:nth-of-type(odd) text {
+  float:left;
+  max-width: 50%;
+  height: auto;
+}
+
+.blog:nth-of-type(even) text {
+  float:right;
+  max-width: 50%;
   height: auto;
 }
