@@ -1,0 +1,64 @@
+<body>
+    <div class="main-content">
+
+        <div class="links">
+            <div class="home">
+              <img src="misc/Img/art/insta_logo.png">
+            </div>
+          
+            <div class="linked_text">
+                <a href="javascript:void(0);" onclick="navigate('#/path1')">Go to Path 1</a>
+                <a href="javascript:void(0);" onclick="navigate('#/path2')">Go to Path 2</a>
+            </div>
+          
+            <div class="linked_image">
+              <img src="misc/Img/art/insta_logo.png">
+              <img src="misc/Img/art/linkedin_logo.png">
+              <img src="misc/Img/art/email_logo.jfif">
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="portfolio">
+
+                <div class="banner">
+                </div>
+
+                <div>    
+                    <div class="portfolio-container">
+                        <h1> Portfolio</h1>
+                        <p> 6 projects </p>
+                    </div>
+
+                    <project-component
+                        class="card-container"
+                        path = "blog">
+                    </project-component>
+                </div>
+                
+                <blog-component 
+                    path="blog/gulls">
+                </blog-component>
+
+                <p>text</p>
+            </div>
+
+            <div class="profile">
+                <div class="intro">
+                    <img src="misc/Img/art/me.jfif">
+                    <h1 class="title">Alasdair PB</h1>
+
+                    <h2>About me</h2>
+                    <p>
+                        Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.
+                    </p>
+
+                    <p>
+                        All content created during my time at unity appears on this site with the permission of my Manager.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -17,7 +17,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-
   margin: 0;
   padding: 0;
   justify-content: center; 
@@ -51,8 +50,8 @@ body {
 
 .portfolio-container {
   display: flex;
-  align-items: center; /* This ensures vertical alignment if the text sizes are different */
-  gap: 10px; /* Optional: Adds some space between the h1 and p */
+  align-items: center; 
+  gap: 10px; 
   color: var(--primary-text-color);
 }
 
@@ -79,12 +78,12 @@ body {
 
 .main-content {
   width: 75%; 
+  height: fit-content;
   size: cover;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   position: relative; 
-  overflow: hidden; 
   background-color: var(  --primary-background-color);
 }
 
@@ -245,13 +244,11 @@ body {
 }
 
 .blog {
-  max-width: 900px;
+  width: 100%;
   padding: 20px;
   margin-top: 20px;
   background-color: #1e1e1e;
   color: var(--primary-text-color);
-  border-radius: 8px;
-  flex: 1 0 calc(33.33% - 20px); 
   box-sizing: border-box; 
   overflow: auto;
 }
