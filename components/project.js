@@ -24,6 +24,7 @@ class Project extends Json {
     
       processData(jsonData) {
         let htmlContent = `
+
         <div class="card">
             <h2>${jsonData.name}</h2>
             <p>${jsonData.text}</p>
