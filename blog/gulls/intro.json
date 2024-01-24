@@ -1,6 +1,6 @@
 {
   "name": "Tide of Gulls",
   "text": "An ECS developed project during my time at Unity",
-  "images": ["gull_skates.png"],
+  "images": ["gull_skates.PNG"],
   "folderPath": "misc/Img/art/"
 }

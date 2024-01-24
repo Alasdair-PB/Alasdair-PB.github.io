@@ -133,7 +133,14 @@ body {
   display: flex;
   width: 100%;
   padding: 10px;
+  gap: 10px;
   justify-content: space-between;
+}
+.links a {
+  color: var(--primary-text-color);
+  text-decoration: none;  
+  font-weight: normal;  
+  width: fit-content;
 }
 
 .home {
@@ -144,6 +151,8 @@ body {
 .linked_text {
   order: 2;
   float: left;
+  gap: 10px;
+  margin-right: auto;
   align-self: center;
 }
 
