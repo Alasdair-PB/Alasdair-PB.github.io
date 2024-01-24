@@ -1,6 +1,6 @@
 {
-  "name": "Tide of Gulls",
-  "text": "An ECS developed project during my time at Unity, permission was given by my manager to showcase this work",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "misc/Img/"
+  "name": "Cowboy Crusader",
+  "text": "A HDRP project developed during my time at Unity",
+  "images": ["the_west.png"],
+  "folderPath": "misc/Img/art/"
 }

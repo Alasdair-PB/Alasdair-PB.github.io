@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #4CAF50; /* Define a primary color */
-  --secondary-color: #6db76f;
-  --primary-contrast-color: #b5e9b7;
+  --primary-color: #f5fcb9; /* Define a primary color */
+  --secondary-color: #b4b983;
+  --primary-contrast-color: #ffffff;
   --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
   --primary-divider-color: #000000;
   --spacing: 10px; /* Define a standard spacing */
   --main-font: 'Arial', sans-serif; /* Define a font */
@@ -11,15 +12,18 @@
 .title {
   font-size: 24px; 
   font-weight: bold;
-  color: #333; 
+  color:var( --secondary-text-color); 
   margin-bottom: 10px; 
 }
 
+
+
 body {
-  background-image: url(Misc/Img/SetUpGuideA.PNG); 
+  background-image: url(misc/Img/art/the_west.PNG); 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   margin: 0;
   padding: 0;
   justify-content: center; 
@@ -31,11 +35,47 @@ body {
 
 .main-content {
   width: 75%; 
-  height: 100vh; 
-  background-color: var(--primary-color);
+  size: cover;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  position: relative; 
+  overflow: hidden; 
+  border: 1px solid   var(--primary-divider-color);
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('misc/Img/art/rock.PNG');
+  background-size: cover; 
+  background-repeat: repeat;
+  filter: blur(.5px);
+  z-index: -1; 
+}
+
+
+.intro {
+  width: 100%;
+  color: #ccc;
+  background-color: #000000;
+}
+
+.links {
+  width: 100%;
+  color: #ccc;
+  background-color: #000000;
+}
+
+.links img{
+  max-width: 5%;
+  float: right;
+  height: auto;
+  margin-right: 20px;
 }
 
 .card-container {
@@ -43,14 +83,16 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 20px;
+  justify-content: center;
+  text-align: center;
 }
 
 .card {
   margin: auto;
   width: 30%;
   padding: 2%;
-  padding-top: 2%; 
   border: 1px solid   var(--primary-divider-color);
   border-radius: 8px;
   flex: 1 0 calc(33.33% - 20px); 
@@ -62,10 +104,10 @@ body {
   text-align: center;
 
   background: linear-gradient(
-    to bottom, 
+    to top, 
     var(--primary-contrast-color) 0%, 
-    var(--primary-contrast-color) 30%, 
-    var(--secondary-color) 30%,
+    var(--primary-contrast-color) 25%, 
+    var(--secondary-color) 25%,
     var(--secondary-color) 100%
   );
 }
@@ -76,6 +118,25 @@ body {
   height: 100px; 
   border-radius: 20px;
   object-fit: cover;
+  border: 1px solid   var(--primary-divider-color);
+}
+
+@media screen and (min-width: 600px) {
+  .card img {
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card img {
+    max-height: 800px;
+  }
+}
+
+@media screen and (min-width: 2560) {
+  .card img {
+    max-height: 1600px;
+  }
 }
 
 .card p{
@@ -87,13 +148,12 @@ body {
 }
 
 .card h2{
-  width: fit-content;           
+  width: fit-content;    
+  height: fit-content;       
   min-width: 80%;
-  margin-top: 0;
   
   align-self: center;
   border-top: 1px solid  var(--primary-divider-color);
-  height: 1px;
   color: var(--primary-text-color);
 }
 
