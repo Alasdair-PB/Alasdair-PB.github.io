@@ -1,6 +1,6 @@
 {
   "name": "Meow Got No Rhythm",
-  "text": "An ECS developed netcode project during my time at Unity, permission was given by my manager to showcase this work",
-  "images": ["versus.gif"],
+  "text": "An ECS developed netcode project during my time at Unity",
+  "images": ["go_hoppip.png"],
   "folderPath": "misc/gif/Meow/"
 }
