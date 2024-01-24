@@ -15,47 +15,52 @@
 
 
         <div class="links">
-            <img src="misc/Img/art/insta_logo.png">
-            <img src="misc/Img/art/linkedin_logo.png">
-            <img src="misc/Img/art/email_logo.jfif">
-        </div>
-
-        <div class="card-container">
-            <h1 class="title">Alasdair PB</h1>
-
-            <div class="intro">
-                <p>Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.</p>
+            <div class="home">
+              <img src="misc/Img/art/insta_logo.png">
             </div>
-        </div>
+          
+            <div class="linked_text">
+              <a href="URL">Link Text</a>
+            </div>
+          
+            <div class="linked_image">
+              <img src="misc/Img/art/insta_logo.png">
+              <img src="misc/Img/art/linkedin_logo.png">
+              <img src="misc/Img/art/email_logo.jfif">
+            </div>
+          </div>
+          
 
-        <div class="card-container">    
-            <div class="card">
-                <h2>heading</h2>
-                <p>texty text</p>
-                <img src="misc/Img/art/dynasty.jpg">
-            </div>
-            <div class="card">
-                <h2>heading</h2>
-                <p>texty text texty text texty text texty text texty text</p>
-                <img src="misc/Img/art/dynasty.jpg">
-            </div>
-            <div class="card">
-                <h2>heading</h2>
-                <p>texty text</p>
-                <img src="misc/Img/art/dynasty.jpg">
-            </div>
-        </div>
+        <div class="container">
 
-        <div class="card-container">    
-            <project-component
-                path = "blog">
-            </project-component>
-        </div>
-        
-        <div class="card-container">     
-            <blog-component 
-                path="blog/gulls">
-            </blog-component>
+            <div class="portfolio">
+
+                <div class="banner">
+                </div>
+
+                <div>    
+                    <project-component
+                        class="card-container"
+                        path = "blog">
+                    </project-component>
+                </div>
+                
+                <blog-component 
+                    path="blog/gulls">
+                </blog-component>
+            </div>
+
+            <div class="profile">
+                <div class="intro">
+                    <img src="misc/Img/art/me.jfif">
+                    <h1 class="title">Alasdair PB</h1>
+
+                    <h2>About me</h2>
+                    <p>
+                        Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -2,8 +2,7 @@ class Project extends Json {
   
     loadJSONFiles(indexFile) {
         this.shadowRoot.innerHTML += `
-            <link rel="stylesheet" href="index.css">
-            <div class="card-container">        
+            <link rel="stylesheet" href="index.css">  
         `;
 
         fetch(indexFile)
@@ -24,11 +23,17 @@ class Project extends Json {
     
       processData(jsonData) {
         let htmlContent = `
+        <div class="text-overlay" 
+        
+            style="background-image: url('${jsonData.folderPath}${jsonData.images[0]}'); 
+                background-position: center; 
+                background-size: cover; 
+                background-repeat: no-repeat; 
+                border-radius: 8px; 
+                overflow: hidden;"
 
-        <div class="card">
             <h2>${jsonData.name}</h2>
             <p>${jsonData.text}</p>
-            <img src=${jsonData.folderPath}${jsonData.images[0]}>
             ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
         </div>
         `;
