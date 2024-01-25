@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Three hit musical combo",
+  "text": "An animation cycle for a three hit attack. Each swing can be canceled and a transiton animation takes the charcater back to the default pose smoothly.",
+  "images": ["attack_cycle.gif"],
+  "folderPath": "Misc/gif/Meow/"
 }

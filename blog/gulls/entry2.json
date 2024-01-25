@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Setting up bezier paths",
+  "text": "Here I looked to make my own bezier system for ECS.",
+  "images": ["bezier.gif"],
+  "folderPath": "Misc/gif/Gulls/"
 }

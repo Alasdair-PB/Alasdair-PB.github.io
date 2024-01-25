@@ -1,6 +1,6 @@
 {
-  "name": "name",
+  "name": "Gilliam of the Golden Coast",
   "text": "This is the text content for item 1.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "images": ["gilliam.jpg"],
+  "folderPath": "Misc/Img/art/"
 }

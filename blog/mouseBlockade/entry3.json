@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Fixing block drop point",
+  "text": "After feedback from play testers I realized players were finding it hard to know when they could no longer control the block. To combat this I added two cat paws to show when the cat's grip on the block is released. ",
+  "images": ["paws.gif"],
+  "folderPath": "Misc/gif/Mouse/"
 }

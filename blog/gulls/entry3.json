@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Generating rails at runtime",
+  "text": "Here I deleved into extruding a 4 point mesh along the bezier curve",
+  "images": ["rails_scaled.gif"],
+  "folderPath": "Misc/gif/Gulls/"
 }

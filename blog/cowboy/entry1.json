@@ -1,6 +1,6 @@
 {
-  "name": "name",
-  "text": "This is the text content for item 1.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Transformation & VFX",
+  "text": "Added a transformation sequence to the aliens where ....",
+  "images": ["transformation.gif"],
+  "folderPath": "Misc/gif/Cowboy/"
 }

@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "HDRP and hoppip walk cycle",
+  "text": "Hoppips jumping around during an evening light. These were initially going to represent the notes the player would have to time their attacks to during raid battles.",
+  "images": ["hoppip.gif"],
+  "folderPath": "Misc/gif/Meow/"
 }

@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
+  "name": "Arch-Minister of the Stars",
   "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "images": ["the_judgement.jpg"],
+  "folderPath": "Misc/Img/art/"
 }

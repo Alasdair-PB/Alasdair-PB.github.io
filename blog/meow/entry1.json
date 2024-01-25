@@ -1,6 +1,6 @@
 {
-  "name": "name",
-  "text": "This is the text content for item 1.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Loading a netcode environment",
+  "text": "To mask the loading sequence from a non-network environment to online the player is covered by a newspaper. Behind this newspaper the prefab is swapped out and replaced with a netcode variant. Online physics is also then enabled.",
+  "images": ["cafe.gif"],
+  "folderPath": "Misc/gif/Meow/"
 }

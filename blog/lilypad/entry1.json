@@ -1,6 +1,6 @@
 {
-  "name": "name",
-  "text": "This is the text content for item 1.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "name": "Workers can be assigned to buildings",
+  "text": "Buildings could be created when resources has been gathered. ",
+  "images": ["building_setup.gif"],
+  "folderPath": "Misc/gif/Lilypad/"
 }

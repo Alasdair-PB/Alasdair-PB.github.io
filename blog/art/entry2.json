@@ -1,6 +1,6 @@
 {
   "name": "name 2",
   "text": "This is the text content for item 2.",
-  "images": ["SetUpGuideA.png"],
-  "folderPath": "Misc/Img/"
+  "images": ["red_sky.jpg"],
+  "folderPath": "Misc/Img/art/"
 }

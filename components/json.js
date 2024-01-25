@@ -31,36 +31,34 @@ class Json extends HTMLElement {
         .catch(error => console.error('Error loading JSON files list:', error));
     }
     
-      loadJSON(file) {
-        fetch(file)
-          .then(response => response.json())
-          .then(data => this.processData(data))
-          .catch(error => console.error('Error loading JSON:', error));
-      }
-    
-      processData(jsonData) {
-        let htmlContent = `
-        <link rel="stylesheet" href="index.css">
-        <div class="blog">
-        `;
-      
-        if (jsonData.images && Array.isArray(jsonData.images)) {
-            jsonData.images.forEach(imageFilename => {
-                htmlContent += `<img src="${jsonData.folderPath}/${imageFilename}">`;
-            });
-        }
+    loadJSON(file) {
+      fetch(file)
+        .then(response => response.json())
+        .then(data => this.processData(data))
+        .catch(error => console.error('Error loading JSON:', error));
+    }
   
-        htmlContent += `          
-          <h2>${jsonData.name}</h2> 
-          <p>${jsonData.text}</p> 
+    processData(jsonData) {
+      let htmlContent = `
+      <link rel="stylesheet" href="index.css">
+      <div class="blog">
       `;
-        
-        htmlContent += `</div>`;
-        this.shadowRoot.innerHTML += htmlContent;
-        
+    
+      if (jsonData.images && Array.isArray(jsonData.images)) {
+          jsonData.images.forEach(imageFilename => {
+              htmlContent += `<img src="${jsonData.folderPath}/${imageFilename}">`;
+          });
       }
-  
-  
+
+      htmlContent += `          
+        <h2>${jsonData.name}</h2> 
+        <p>${jsonData.text}</p> 
+    `;
+      
+      htmlContent += `</div>`;
+      this.shadowRoot.innerHTML += htmlContent;
+      
+      }
   
     static get observedAttributes() {
       return ['path'];
