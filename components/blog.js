@@ -21,7 +21,7 @@ class Blog extends Json {
     
       if (jsonData.images && Array.isArray(jsonData.images)) {
           jsonData.images.forEach(imageFilename => {
-              htmlContent += `<img src="${jsonData.folderPath}/${imageFilename}">`;
+              htmlContent += `<img src="${jsonData.folderPath}${imageFilename}">`;
           });
       }
 
