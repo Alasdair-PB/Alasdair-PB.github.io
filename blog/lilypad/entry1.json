@@ -2,5 +2,5 @@
   "name": "Workers can be assigned to buildings",
   "text": "Buildings could be created when resources has been gathered. ",
   "images": ["building_setup.gif"],
-  "folderPath": "Misc/gif/Lilypad/"
+  "folderPath": "misc/gif/Lilypad/"
 }

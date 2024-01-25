@@ -2,5 +2,6 @@
   "name": "Meow Got No Rhythm",
   "text": "An ECS developed netcode project during my time at Unity",
   "images": ["go_hoppip.png"],
-  "folderPath": "misc/gif/Meow/"
+  "folderPath": "misc/gif/Meow/",
+  "link": "#/meow"
 }

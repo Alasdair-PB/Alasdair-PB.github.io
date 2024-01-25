@@ -2,5 +2,6 @@
   "name": "Project Lilypad",
   "text": "A netcode for gameobjects based project developed during my time at Unity",
   "images": ["reeds.png"],
-  "folderPath": "misc/Img/art/"
+  "folderPath": "misc/Img/art/",
+  "link": "#/lilypad"
 }

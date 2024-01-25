@@ -2,5 +2,6 @@
   "name": "Cowboy Crusader",
   "text": "A HDRP project developed during my time at Unity",
   "images": ["the_west.PNG"],
-  "folderPath": "misc/Img/art/"
+  "folderPath": "misc/Img/art/",
+  "link": "#/cowboy"
 }

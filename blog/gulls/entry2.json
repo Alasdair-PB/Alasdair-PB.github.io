@@ -2,5 +2,5 @@
   "name": "Setting up bezier paths",
   "text": "Here I looked to make my own bezier system for ECS.",
   "images": ["bezier.gif"],
-  "folderPath": "Misc/gif/Gulls/"
+  "folderPath": "misc/gif/Gulls/"
 }

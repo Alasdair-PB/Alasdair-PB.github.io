@@ -199,6 +199,10 @@ body {
   z-index: 2; 
 }
 
+.text-overlay a {
+  color: var(--primary-text-color);
+}
+
 .text-overlay p::before {
   content: '';
   position: absolute;

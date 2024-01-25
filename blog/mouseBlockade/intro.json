@@ -2,5 +2,6 @@
   "name": "Mouse Blockade",
   "text": "An ongoing personal project to create a local multiplayer game with asymmetric design.",
   "images": ["mb_logo.png"],
-  "folderPath": "misc/Img/art/"
+  "folderPath": "misc/Img/art/",
+  "link": "#/mouseBlockade"
 }

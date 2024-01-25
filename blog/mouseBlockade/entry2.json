@@ -2,5 +2,5 @@
   "name": "Tetris clears",
   "text": "At this point I was able to get tetris points to clear on line fills.",
   "images": ["tetris_clear.gif"],
-  "folderPath": "Misc/gif/Mouse/"
+  "folderPath": "misc/gif/Mouse/"
 }

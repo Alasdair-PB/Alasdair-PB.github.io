@@ -3,5 +3,5 @@
   "name": "Getting the action player to wall jump",
   "text": "This is the text content for item 2.",
   "images": ["wall_jumps.gif"],
-  "folderPath": "Misc/gif/Mouse/"
+  "folderPath": "misc/gif/Mouse/"
 }

@@ -2,5 +2,5 @@
   "name": "Gilliam of the Golden Coast",
   "text": "This is the text content for item 1.",
   "images": ["gilliam.jpg"],
-  "folderPath": "Misc/Img/art/"
+  "folderPath": "misc/Img/art/"
 }

@@ -2,5 +2,5 @@
   "name": "Reallocating workers",
   "text": "Lilypad Workers be reallocated to builds",
   "images": ["workers_cancel.gif"],
-  "folderPath": "Misc/gif/Lilypad/"
+  "folderPath": "misc/gif/Lilypad/"
 }

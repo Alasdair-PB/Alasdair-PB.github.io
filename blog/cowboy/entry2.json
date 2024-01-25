@@ -2,5 +2,5 @@
   "name": "Adding IK",
   "text": "My implementation of IK for different surface configs. The foot also rotates to the orientation of the plane..",
   "images": ["ik.gif"],
-  "folderPath": "Misc/gif/Cowboy/"
+  "folderPath": "misc/gif/Cowboy/"
 }
