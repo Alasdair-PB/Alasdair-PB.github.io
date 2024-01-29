@@ -9,12 +9,15 @@
             </div>
           
             <div class="linked_text">
-                <a href="javascript:void(0);" onclick="navigate('#/cowboy')">Cowboy_Crusader</a>
-                <a href="javascript:void(0);" onclick="navigate('#/gulls')">Tide_of_Gull</a>
-                <a href="javascript:void(0);" onclick="navigate('#/meow')">Meow_GNR</a>
-                <a href="javascript:void(0);" onclick="navigate('#/lilypad')">Lilypad_Wars</a>
-                <a href="javascript:void(0);" onclick="navigate('#/mouseBlockade')">Mouse_Blockade</a>
-                <a href="javascript:void(0);" onclick="navigate('#/art')">Art</a>
+                <select onchange="navigate(this.value)">
+                    <option value="#/home">Home</option>
+                    <option value="#/cowboy">Cowboy_Crusader</option>
+                    <option value="#/gulls">Tide_of_Gull</option>
+                    <option value="#/meow">Meow_GNR</option>
+                    <option value="#/lilypad">Lilypad_Wars</option>
+                    <option value="#/mouseBlockade">Mouse_Blockade</option>
+                    <option value="#/art">Art</option>
+                </select>
             </div>
           
             <div class="linked_image">
@@ -47,7 +50,7 @@
                     </project-component>
 
                     <div class="portfolio-container">
-                        <h1> Latest Updates</h1>
+                        <h1> Project Favourites</h1>
                         <p> 25/01/2024 </p>
                     </div>
 
@@ -55,23 +58,25 @@
                 
                 <blog-component 
                     class="card-container"
-                    path="blog/gulls">
+                    path="blog/cowboy">
                 </blog-component>
             </div>
 
             <div class="profile">
-                <div class="intro">
-                    <img src="misc/Img/art/me.jfif">
-                    <h1 class="title">Alasdair PB</h1>
+                <div class="hide-on-mobile">
+                    <div class="intro">
+                        <img src="misc/Img/art/me.jfif">
+                        <h1 class="title">Alasdair PB</h1>
 
-                    <h2>About me</h2>
-                    <p>
-                        Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.
-                    </p>
+                        <h2>About me</h2>
+                        <p>
+                            Game Developer, Artist and Skater- currently working as a software engineer for Unity Technologies.
+                        </p>
 
-                    <p>
-                        All content created during my time at unity appears on this site with the permission of my Manager.
-                    </p>
+                        <p>
+                            All content created during my time at unity appears on this site with the permission of my Manager.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

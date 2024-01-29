@@ -1,6 +1,6 @@
 {
   "name": "Generating rails at runtime",
-  "text": "Here I deleved into extruding a 4 point mesh along the bezier curve",
+  "text": "I deleved into extruding a 4 point mesh along the bezier curve. This occurs at runtime as the spline has a randomized path and position.",
   "images": ["rails_scaled.gif"],
   "folderPath": "misc/gif/Gulls/"
 }

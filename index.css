@@ -11,6 +11,18 @@
   --main-font: 'Arial', sans-serif; /* Define a font */
 }
 
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+      display: none;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .show-on-desktop {
+      display: block;
+  }
+}
+
 body {
   background-image: url(misc/Img/art/the_west.PNG); 
   background-size: cover;

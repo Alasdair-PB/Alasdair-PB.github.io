@@ -1,6 +1,6 @@
 {
-  "name": "name 2",
-  "text": "This is the text content for item 2.",
+  "name": "Red sky",
+  "text": "A mechanical device or weapon designed to appear in times of crisis to protect the Judgement.",
   "images": ["red_sky.jpg"],
   "folderPath": "misc/Img/art/"
 }

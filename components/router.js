@@ -1,4 +1,6 @@
 async function loadContent(url) {
+    document.getElementById('loading').style.display = 'block';
+
     try {
         const response = await fetch(url);
         const data = await response.text();
@@ -6,6 +8,8 @@ async function loadContent(url) {
     } catch (error) {
         console.error('Error fetching content:', error);
         return '<p>Error loading content</p>';
+    } finally {
+        document.getElementById('loading').style.display = 'none';
     }
 }
 
@@ -26,12 +30,15 @@ function router() {
         case '#/home': 
             loadContent('home.html').then(html => contentDiv.innerHTML = html);
             break;
-        // Can be any url :))
         default:
             loadContent('loader.html').then(html => contentDiv.innerHTML = html);
             break;
     }
 }
+
+window.onload = function() {
+    document.getElementById('loading').style.display = 'none';
+};
 
 window.addEventListener('hashchange', router);
 

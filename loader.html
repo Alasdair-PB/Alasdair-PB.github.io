@@ -9,12 +9,15 @@
             </div>
           
             <div class="linked_text">
-                <a href="javascript:void(0);" onclick="navigate('#/cowboy')">Cowboy_Crusader</a>
-                <a href="javascript:void(0);" onclick="navigate('#/gulls')">Tide_of_Gull</a>
-                <a href="javascript:void(0);" onclick="navigate('#/meow')">Meow_GNR</a>
-                <a href="javascript:void(0);" onclick="navigate('#/lilypad')">Lilypad_Wars</a>
-                <a href="javascript:void(0);" onclick="navigate('#/mouseBlockade')">Mouse_Blockade</a>
-                <a href="javascript:void(0);" onclick="navigate('#/art')">Art</a>
+                <select onchange="navigate(this.value)">
+                    <option value="#/home">Home</option>
+                    <option value="#/cowboy">Cowboy_Crusader</option>
+                    <option value="#/gulls">Tide_of_Gull</option>
+                    <option value="#/meow">Meow_GNR</option>
+                    <option value="#/lilypad">Lilypad_Wars</option>
+                    <option value="#/mouseBlockade">Mouse_Blockade</option>
+                    <option value="#/art">Art</option>
+                </select>
             </div>
           
             <div class="linked_image">
@@ -37,18 +40,18 @@
                 <div class="banner">
                 </div>
                 
-
                 <blogger-component>
                 </blogger-component>
-
 
                 <p>text</p>
             </div>
 
-        <div class="profile">
-                <profile-component>
-                    class = "intro"
-                </profile-component>
+            <div class="profile">
+                <div class="hide-on-mobile">
+                    <profile-component>
+                        class = "intro"
+                    </profile-component>
+                </div>
             </div>
         </div>
     </div>
