@@ -1,0 +1,6 @@
+{
+  "name": "Adding in a character select with UI Elements",
+  "text": "Now able to set the players to CPU and adjust player count based on the active game mode. Team colors and skin options have also been added for future implementation. All UI elements are added in code for dynamic content/ layouts. ",
+  "images": ["UI.gif"],
+  "folderPath": "misc/gif/Mouse/"
+}

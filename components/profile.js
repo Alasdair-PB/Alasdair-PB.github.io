@@ -22,15 +22,12 @@ class Profile extends Json {
             <div class="intro">
             <img src='${jsonData.folderPath}${jsonData.images[0]}'>
             <h1 class="title">${jsonData.name}</h1>
-
             <h2>About this project</h2>
             <p>
                 ${jsonData.text}
             </p>
 
-            <p>
-                This project was 
-            </p>
+
             </div>
 
         `;

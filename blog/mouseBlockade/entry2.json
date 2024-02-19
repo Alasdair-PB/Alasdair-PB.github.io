@@ -1,6 +1,6 @@
 {
   "name": "Tetris clears",
-  "text": "At this point I was able to get tetris points to clear on line fills.",
+  "text": " One of the first gameplay loops to get down was adding in a tetris like system. Getting tetris clears in the game was a goal as design wise it encourages the cat to play well so they don't create an exit for the rats.",
   "images": ["tetris_clear.gif"],
   "folderPath": "misc/gif/Mouse/"
 }
