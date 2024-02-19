@@ -144,6 +144,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: var(  --primary-background-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
