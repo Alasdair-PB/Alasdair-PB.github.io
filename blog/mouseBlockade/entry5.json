@@ -1,6 +1,6 @@
 {
   "name": "Adding in the Cat",
   "text": "The cat model was created in blender with shape keys allowing for multiple expressions. Getting the model to interact with blocks required setting up a quick IK chain for the arms and an aim constraint for the head.  ",
-  "images": ["cat_ik.gif"],
+  "images": ["cat_ik.GIF"],
   "folderPath": "misc/gif/Mouse/"
 }
