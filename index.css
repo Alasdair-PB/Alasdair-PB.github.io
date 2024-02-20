@@ -358,6 +358,7 @@ body {
   box-sizing: border-box; 
   overflow: auto;
   font-size: .5em;
+  text-align: left;
 }
 
 
