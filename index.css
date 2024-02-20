@@ -29,6 +29,7 @@
 
 body {
   background-image: url(misc/Img/art/stars_in_the_sky.png); 
+  background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
