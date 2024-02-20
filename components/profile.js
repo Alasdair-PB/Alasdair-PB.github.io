@@ -20,14 +20,15 @@ class Profile extends Json {
             <link rel="stylesheet" href="index.css">  
 
             <div class="intro">
-            <img src='${jsonData.folderPath}${jsonData.images[0]}'>
-            <h1 class="title">${jsonData.name}</h1>
-            <h2>About this project</h2>
-            <p>
-                ${jsonData.text}
-            </p>
+              <img src='${jsonData.folderPath}${jsonData.images[0]}'>
+              <h1 class="title">${jsonData.name}</h1>
+              <h2>About this project</h2>
 
+              <div class="arrow-text">
 
+                  ${jsonData.text}
+
+              </div>
             </div>
 
         `;
