@@ -1,6 +1,6 @@
 {
   "name": "Generating rails at runtime",
-  "text": "I deleved into extruding a 4 point mesh along the bezier curve. This occurs at runtime as the spline has a randomized path and position.",
+  "text": "To generate rails for Tide of Gulls I deleved into extruding a 4 point mesh along the bezier curve. This occurs at runtime as the spline has a randomized path and position. This extrusion function was later improved and used in other projects for more complex mesh generation. ",
   "images": ["rails_scaled.gif"],
   "folderPath": "misc/gif/Gulls/"
 }

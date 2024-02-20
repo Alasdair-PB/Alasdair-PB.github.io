@@ -1,6 +1,6 @@
 {
   "name": "Setting Up Rails",
-  "text": "For this endless runner we wanted to add grind rails to recreate the sense of speed in Sonic games. This epic also allowed us to design ways for players to show off some tricks with a new style ranking system and tricks button.",
+  "text": "For this endless runner we wanted to add grind rails to recreate the sense of speed in Sonic games. This addition also allowed us to design ways for players to show off some tricks with a new style ranking system and tricks button.",
   "images": ["showcase.gif"],
   "folderPath": "misc/gif/Gulls/"
 }

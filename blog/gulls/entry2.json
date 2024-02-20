@@ -1,6 +1,6 @@
 {
   "name": "Setting up bezier paths",
-  "text": "I wanted to make our own bezier system for ECS that both had gizmos allowing us to configure paths in the Editor to test generation and also make use of data oriented techniques.",
+  "text": "A bezier system was created for ECS that both had gizmos allowing us to configure paths in the Editor to test generation and also make use of data oriented techniques. ",
   "images": ["bezier.gif"],
   "folderPath": "misc/gif/Gulls/"
 }
