@@ -351,7 +351,7 @@ body {
 
 .blog {
   width: 100%;
-  padding: 20px;
+  padding: 5%;
   margin-top: 20px;
   background-color: #1e1e1e;
   color: var(--primary-text-color);
@@ -363,29 +363,31 @@ body {
 
 .blog:nth-of-type(odd) img {
   float: right;
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
-  margin-right: 20px;
+  margin-left: 5%;
 }
 
 
 .blog:nth-of-type(even) img {
   float: left;
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
-  margin-right: 20px;
+  margin-right: 5%;
 }
 
 .blog:nth-of-type(odd) text {
   float:left;
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
+  margin-right: 5%; 
 }
 
 .blog:nth-of-type(even) text {
   float:right;
-  max-width: 50%;
+  max-width: 45%;
   height: auto;
+  margin-left: 5%; 
 }
 
 @media screen and (min-width: 768px) {
