@@ -30,9 +30,10 @@ class Blog extends Json {
         <hr>
         <p>${jsonData.text}</p>
         
-        <div class="blog_card">
-          <p>last updated: ${jsonData.date}</p>
-        </div>
+       
+        <p>last updated: ${jsonData.date}</p>
+
+          <like-dislike class="like_dislike">
     `;
       
       htmlContent += `</div>`;

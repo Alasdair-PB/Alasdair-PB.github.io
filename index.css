@@ -362,70 +362,67 @@ body {
   text-align: left;
 }
 
-.blog_card:nth-of-type(odd) {
-  float:left;
-  max-width: 45%;
+.like_dislike, .blog img, .blog text {
+  width: 80%;
   height: auto;
-  margin-right: 5%; 
 }
 
-.blog_card:nth-of-type(even) {
-  float:right;
-  max-width: 45%;
-  height: auto;
-  margin-left: 5%; 
-}
-
-
-.blog:nth-of-type(odd) img {
-  float: right;
-  max-width: 45%;
-  height: auto;
-  margin-left: 5%;
-}
-
-
-.blog:nth-of-type(even) img {
+.blog:nth-of-type(odd) img, .blog:nth-of-type(odd) text {
   float: left;
-  max-width: 45%;
-  height: auto;
   margin-right: 5%;
 }
 
-.blog:nth-of-type(odd) text {
-  float:left;
-  max-width: 45%;
-  height: auto;
-  margin-right: 5%; 
+.blog:nth-of-type(even) img, .blog:nth-of-type(even) text {
+  float: right;
+  margin-left: 5%;
 }
 
-.blog:nth-of-type(even) text {
-  float:right;
+.blog img, .blog text {
   max-width: 45%;
-  height: auto;
-  margin-left: 5%; 
 }
+
+
+  .like_dislike button {
+    width: 10%; 
+    text-align: left;
+    justify-content: left;
+    aspect-ratio: 3 / 1;
+    font-size: 3px; 
+  }
+
+  @media screen and (min-width: 850px) {
+    .like_dislike button {
+      font-size: 5px; 
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .like_dislike button  {
+      font-size: .5em;
+    }
+  }
+
 
 @media screen and (min-width: 768px) {
   .blog {
-    font-size: 1em; /* Adjust this value as needed */
+    font-size: 1em; 
   }
 }
 
 @media screen and (min-width: 1024px) {
   .blog {
-    font-size: 1.1em; /* Adjust this value as needed */
+    font-size: 1.1em;
   }
 }
 
 @media screen and (min-width: 768px) {
   .intro {
-    font-size: .7em; /* Adjust this value as needed */
+    font-size: .7em; 
   }
 }
 
 @media screen and (min-width: 1024px) {
   .intro {
-    font-size: 1em; /* Adjust this value as needed */
+    font-size: 1em; 
   }
 }
