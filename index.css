@@ -384,8 +384,6 @@ body {
 
   .like_dislike button {
     width: 10%; 
-    text-align: left;
-    justify-content: left;
     aspect-ratio: 3 / 1;
     font-size: 3px; 
   }
