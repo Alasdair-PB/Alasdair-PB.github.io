@@ -2,5 +2,6 @@
   "name": "Red sky",
   "text": "A mechanical device or weapon designed to appear in times of crisis to protect the Judgement.",
   "images": ["red_sky.jpg"],
-  "folderPath": "misc/Img/art/"
+  "folderPath": "misc/Img/art/",
+  "date": "20/02/2024"
 }

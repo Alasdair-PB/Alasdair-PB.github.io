@@ -2,5 +2,6 @@
   "name": "Changing up design",
   "text": "As players were now detatched from the speed of the auto-runner they could outrun the level generation so we need an easy way to force the player to slow down when they were going to fast. For this we added tripping. While a more long term solution would have been prefered this project has a short deadline.  ",
   "images": ["slow.gif"],
-  "folderPath": "misc/gif/Gulls/"
+  "folderPath": "misc/gif/Gulls/",
+  "date": "20/02/2024"
 }

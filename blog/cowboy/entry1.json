@@ -2,5 +2,6 @@
   "name": "Transformation & VFX",
   "text": "Added a transformation sequence to the aliens once the player is spotted. This action is an interrupt that gets added to a stack in the Alien's statemachine. In this same updates Alien also were given the ability to wave to each other when noticing each other for the first time.",
   "images": ["transformation.gif"],
-  "folderPath": "misc/gif/Cowboy/"
+  "folderPath": "misc/gif/Cowboy/",
+  "date": "20/02/2024"
 }

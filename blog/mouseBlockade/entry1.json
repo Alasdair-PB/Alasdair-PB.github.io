@@ -3,5 +3,6 @@
   "name": "Getting the action player to wall jump",
   "text": "The players jump arc was created using a parabolic path equation instead of traditional forces being applied. After the top arc of the jump motion has been completed the player is allowed to fall using regular gravity. The wall jump is an edited version of this path.",
   "images": ["wall_jumps.gif"],
-  "folderPath": "misc/gif/Mouse/"
+  "folderPath": "misc/gif/Mouse/",
+  "date": "20/02/2024"
 }

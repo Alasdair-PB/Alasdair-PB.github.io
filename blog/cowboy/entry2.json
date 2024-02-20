@@ -2,5 +2,6 @@
   "name": "Adding IK",
   "text": "My implementation of IK for different surface configs. The foot also rotates to the orientation of the plane. The IK was later reconfigured to support strafing where one foot crosses the other foot. The IK is enabled and blended into the running cycle when the foot gets close enough to the ground to be considered contacting. ",
   "images": ["ik.gif"],
-  "folderPath": "misc/gif/Cowboy/"
+  "folderPath": "misc/gif/Cowboy/",
+  "date": "20/02/2024"
 }

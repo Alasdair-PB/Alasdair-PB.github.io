@@ -361,6 +361,20 @@ body {
   text-align: left;
 }
 
+.blog_card:nth-of-type(odd) {
+  float:left;
+  max-width: 45%;
+  height: auto;
+  margin-right: 5%; 
+}
+
+.blog_card:nth-of-type(even) {
+  float:right;
+  max-width: 45%;
+  height: auto;
+  margin-left: 5%; 
+}
+
 
 .blog:nth-of-type(odd) img {
   float: right;

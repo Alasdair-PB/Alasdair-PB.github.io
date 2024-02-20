@@ -2,5 +2,6 @@
   "name": "Workers can be assigned to buildings",
   "text": "Buildings could be created when enough resources has been gathered. Workers will then travel to the destination and begin construction.",
   "images": ["building_setup.gif"],
-  "folderPath": "misc/gif/Lilypad/"
+  "folderPath": "misc/gif/Lilypad/",
+  "date": "20/02/2024"
 }

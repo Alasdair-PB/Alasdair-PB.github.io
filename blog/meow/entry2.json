@@ -2,5 +2,6 @@
   "name": "Three hit musical combo",
   "text": "An animation cycle for a three hit attack. Each swing can be canceled and a transiton animation takes the charcater back to the default pose smoothly.",
   "images": ["attack_cycle.gif"],
-  "folderPath": "misc/gif/Meow/"
+  "folderPath": "misc/gif/Meow/",
+  "date": "20/02/2024"
 }

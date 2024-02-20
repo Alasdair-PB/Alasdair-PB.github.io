@@ -2,5 +2,6 @@
   "name": "Attacking states",
   "text": "Here's the enemies switching between different attacking states. Weapon sets were configured to allow the utility AI to act with whatever weapon set it's been assigned by the level designer.",
   "images": ["attacking.gif"],
-  "folderPath": "misc/gif/Cowboy/"
+  "folderPath": "misc/gif/Cowboy/",
+  "date": "20/02/2024"
 }

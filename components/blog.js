@@ -27,7 +27,12 @@ class Blog extends Json {
 
       htmlContent += `          
         <h2>${jsonData.name}</h2> 
-        <p>${jsonData.text}</p> 
+        <hr>
+        <p>${jsonData.text}</p>
+        
+        <div class="blog_card">
+          <p>last updated: ${jsonData.date}</p>
+        </div>
     `;
       
       htmlContent += `</div>`;

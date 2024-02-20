@@ -2,5 +2,6 @@
   "name": "Tetris clears",
   "text": " One of the first gameplay loops to get down was adding in a tetris like system. Getting tetris clears in the game was a goal as design wise it encourages the cat to play well so they don't create an exit for the rats.",
   "images": ["tetris_clear.gif"],
-  "folderPath": "misc/gif/Mouse/"
+  "folderPath": "misc/gif/Mouse/",
+  "date": "20/02/2024"
 }

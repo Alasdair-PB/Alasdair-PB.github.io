@@ -2,5 +2,6 @@
   "name": "Reallocating workers",
   "text": "Lilypad Workers can be reallocated to builds after a build has already been started. This allows workers to cancel their builds temporarily to complete another task before returning to finish the building.",
   "images": ["workers_cancel.gif"],
-  "folderPath": "misc/gif/Lilypad/"
+  "folderPath": "misc/gif/Lilypad/",
+  "date": "20/02/2024"
 }
