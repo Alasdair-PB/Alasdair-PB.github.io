@@ -1,6 +1,7 @@
 {
   "name": "Art Portfolio",
   "text": "Traditional and digital art drawn over many years.",
+  "description" : "Many of these art pieces have been created as designs for a fictional world I want to develop into a game some day.",
   "images": ["relics.jpg"],
   "folderPath": "misc/Img/art/",
   "link": "#/art"

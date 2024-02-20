@@ -408,6 +408,6 @@ body {
 
 @media screen and (min-width: 1024px) {
   .intro {
-    font-size: 1.2em; /* Adjust this value as needed */
+    font-size: 1em; /* Adjust this value as needed */
   }
 }

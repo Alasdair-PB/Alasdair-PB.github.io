@@ -29,6 +29,11 @@ class Profile extends Json {
                   ${jsonData.text}
 
               </div>
+
+              <p> </p>
+
+              <p> ${jsonData.description} </p>
+
             </div>
 
         `;
