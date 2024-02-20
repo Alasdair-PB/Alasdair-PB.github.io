@@ -18,8 +18,11 @@ class LikeDislike extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="index.css">
             <div class="like_dislike">
+            
+        <div >
                 <button id="likeButton">Like ${this.likeCount}</button>
                 <button id="dislikeButton">Dislike ${this.dislikeCount}</button>
+                </div>
         `;
     }
 

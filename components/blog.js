@@ -32,8 +32,7 @@ class Blog extends Json {
         
        
         <p>last updated: ${jsonData.date}</p>
-
-          <like-dislike class="like_dislike">
+  
     `;
       
       htmlContent += `</div>`;
