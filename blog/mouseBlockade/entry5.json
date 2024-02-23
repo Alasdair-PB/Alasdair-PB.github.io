@@ -1,6 +1,6 @@
 {
   "name": "Adding in the Cat",
-  "text": "The cat model was created in blender with shape keys allowing for multiple expressions. Getting the model to interact with blocks required setting up a quick IK chain for the arms and an aim constraint for the head.  ",
+  "text": "The cat model was created in blender with shape keys allowing for multiple expressions. Getting the model to interact with blocks required setting up a quick IK chain for the arms and an aim constraint for the head. This model was one of the first efforts to move the game to a full 3D development pipeline to quicken the development process.",
   "images": ["cat_arms.gif"],
   "folderPath": "misc/gif/Mouse/",
   "date": "20/02/2024"
