@@ -1,7 +1,7 @@
 {
-  "name": "Warning- The Cat has a samurai sword!",
-  "text": "To better incentivize block clearing the cat can now build up meter to deploy an Utilmate ability. The samurai sword ultimate focuses on forcing mice to scatter and has the additional benefit of removing blocks that may be beneficial to the mice. Ultimates level 2s are also now in development that are limited by a single deployment per game, but are far more powerful. More options for level 1s are also in the design stages. ",
-  "images": ["samurai.gif"],
+  "name": "Adding in the Cat",
+  "text": "The cat model was created in blender with shape keys allowing for multiple expressions. Getting the model to interact with blocks required setting up a quick IK chain for the arms and an aim constraint for the head. This model was one of the first efforts to move the game to a full 3D development pipeline to quicken the development process.",
+  "images": ["cat_arms.gif"],
   "folderPath": "misc/gif/Mouse/",
-  "date": "20/02/2024"
+  "date": "19/02/2024"
 }

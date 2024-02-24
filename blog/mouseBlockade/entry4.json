@@ -1,7 +1,7 @@
 {
-  "name": "Adding in a character select with UI Elements",
-  "text": "The player is now able to set the characters to CPU and adjust player count based on the active game mode. Team colors and skin options have also been added for future implementation. This UI was designed to follow modular rules where new games mode can be added simply by creating new scriptable objects with variable parameters. UI then scales correctly with intended rules in place to quicken gamemode testing and development. All UI elements are added in code for dynamic content/ layouts. All UI art assets are still temporary until models have all their textures for a final render :) ",
-  "images": ["ui_elements.gif"],
+  "name": "Drilling Rats",
+  "text": "During development it quickly became apparent that mice could get trapped underneath blocks. From this the drill mechanic was designed and the signature look of the mice was created. The mice can drill in any direction, but will rebound off walls when drilling towards a border block. Mice will be able to obtain items by drilling into item blocks that have a rare chance of spawning in each block placed by the cat. This ability also brings the potential for direction blocks in the future that will turn the mice automatically if the mice drill into them- allowing the cat to create traps that redirect the mice into spike blocks.",
+  "images": ["drill.gif"],
   "folderPath": "misc/gif/Mouse/",
-  "date": "20/02/2024"
+  "date": "02/01/2024"
 }
