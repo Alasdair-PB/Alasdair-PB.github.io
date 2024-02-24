@@ -1,7 +1,7 @@
 {
   "name": "Warning- The Cat has a samurai sword!",
   "text": "To better incentivize block clearing the cat can now build up meter to deploy an Utilmate ability. The samurai sword ultimate focuses on forcing mice to scatter and has the additional benefit of removing blocks that may be beneficial to the mice. Ultimates level 2s are also now in development that are limited by a single deployment per game, but are far more powerful. More options for level 1s are also in the design stages. ",
-  "images": ["samurai_sword.gif"],
+  "images": ["samurai.gif"],
   "folderPath": "misc/gif/Mouse/",
   "date": "20/02/2024"
 }
