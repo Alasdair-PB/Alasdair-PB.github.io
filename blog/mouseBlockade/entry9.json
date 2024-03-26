@@ -1,0 +1,7 @@
+{
+  "name": "Adding in Networked Gameplay",
+  "text": "Scripts had to be reworked to better utilize Server and Client Rpcs to optimally send requests over the network. Rats are for now implemented using mostly client side logic with rollback being set up as an option in the future. The Cat depends mainly on server side checks however this is currently being reworked to reduce network calls. The new cutscene masks the transition as clients are checked, approved and added to the active players list. ",
+  "images": ["lobby.gif"],
+  "folderPath": "misc/gif/Mouse/",
+  "date": "7/03/2024"
+}

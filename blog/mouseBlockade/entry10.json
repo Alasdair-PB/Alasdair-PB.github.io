@@ -1,0 +1,7 @@
+{
+  "name": "Vaults, coins and blocks",
+  "text": "Rats can now collect coins which allows them to purchase items from vaults that spawn in block groups. These items are blocks that can be placed next to the player- allowing them to either ruin the cat's line clears or build a platform to escape. These changes were added to give rats a better reason to navigate the levels getting created around them- making them constantly engage with new obstacles. ",
+  "images": ["slotsandexplo.gif"],
+  "folderPath": "misc/gif/Mouse/",
+  "date": "15/03/2024"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Adding Lobbies",
+  "text": "Using lobbies and relay players are now able to connect to each other's games and share a space to load in the next mode. Menus ended up getting changed to better give players the option to customize their game. ",
+  "images": ["lobbynogame.gif"],
+  "folderPath": "misc/gif/Mouse/",
+  "date": "22/02/2024"
+}
+
