@@ -1,0 +1,7 @@
+{
+  "name": "The Next Project.",
+  "text": "While Cat Blockade was a game concept first & development second, this project is the reverse. I’m aiming to take up each feature as a programming challenge as I create independent modular components in hopes of having the option to reuse any feature in future projects. Check for updates on the ‘rogue’ section on this site. The code for this new project can be sourced from: https://github.com/Alasdair-PB/RougeLikeShootEmUp.",
+  "images": ["next.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "16/04/2024"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Mouse Blockade",
+  "text": "An ongoing personal project to create a local multiplayer game with asymmetric design.",
+  "description" : "Mouse Blockade takes inspiration from the Orignal Donkey Kong and Tetris in a mash-up asymmetric experience. The mice must escape! The cat must crush them! Stratergies emerge as platforms are created by the blocks the cat drops. ",
+  "images": ["mb_logo.png"],
+  "folderPath": "misc/Img/art/",
+  "link": "#/mouseBlockade"
+}
