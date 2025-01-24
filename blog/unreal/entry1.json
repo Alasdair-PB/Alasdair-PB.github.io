@@ -1,7 +1,7 @@
 {
   "name": "Constraint Solver",
-  "text": "Cat models have been updated to allow for more dynamic facial animations, eye movements and paws! Look forward to seeing these soon in game!",
-  "images": ["facerig.gif"],
-  "folderPath": "misc/gif/Mouse/",
+  "text": "",
+  "images": ["collision.png"],
+  "folderPath": "misc/Img/art/",
   "date": "26/03/2024"
 }

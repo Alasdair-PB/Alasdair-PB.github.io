@@ -2,7 +2,7 @@
   "name": "Newcastle C++ & OpenGL",
   "text": "The ongoings & coursework from my Msc studies in Games Engineering at Newcastle University. ",
   "description" : "Updates from my modules and coursewwork as I showcase a C++ & OpenGL centered portfolio.",
-  "images": ["mb_logo.png"],
+  "images": ["newcastle.png"],
   "folderPath": "misc/Img/art/",
-  "link": "#/mouseBlockade"
+  "link": "#/newcastle"
 }

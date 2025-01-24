@@ -1,0 +1,7 @@
+{
+  "name": "CSC8503 Coursework prt 1",
+  "text": "This coursework implements: Sphere, AABB, and some OBB & apsule collisions. Physics constraints were also created to make a rope bridge effect between multiple cubes.   ",
+  "images": ["collision.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "16/12/2024"
+}

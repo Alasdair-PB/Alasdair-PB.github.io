@@ -1,7 +1,7 @@
 {
-  "name": "Conways Game of Life",
-  "text": "Coursework for C4071068 my Advanced Programming module at Newcastle. This project was my first full introduction to C++. The code displays a user interface that simulates Conway's game of life. Alongside this the user may search for specific patterns that can form in the game/ Including: spaceships, Oscillators, Blinkers,and toads. Core features: Threading, parallel programming, Pattern Detection, Templates, Operator overrides, Classes, Inheritance et al. Final Grade: 100/100. https://github.com/Alasdair-PB/ConwaysGameOfLife-C4071068/tree/master",
-  "images": [],
-  "folderPath": "",
+  "name": "CSC8502 Coursework prt 1",
+  "text": "CSC8502 Coursework 2024/25. Coursework for my Graphics & rendering module. The code base was written using C++ & Opengl alongside shaders coded in GLSL.  Lighting, Tess & Geometry showcase: https://youtu.be/KN5iCqhPOUs Particle Render showcase: https://youtu.be/kmshfE3gGJ4 , Github: https://github.com/Alasdair-PB/CSC8502CourseWork ",
+  "images": ["showcase.png"],
+  "folderPath": "misc/Img/art/",
   "date": "17/10/2024"
 }

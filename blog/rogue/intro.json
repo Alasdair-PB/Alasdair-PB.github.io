@@ -1,8 +1,8 @@
 {
   "name": "Rogue (Shooter)",
-  "text": "An ongoing personal project to create a Game from modular systems.",
+  "text": "An ongoing personal Unity project to create a Game using modular systems.",
   "description" : "Rogue shooter looks to implement the base logic of a top down shoot em up with rogue like progression. Using dialogue trees for character interactions on death & Utility UI for enemy ships. Features are designed first as coding challenges. ",
-  "images": ["mb_logo.png"],
+  "images": ["rogue.png"],
   "folderPath": "misc/Img/art/",
   "link": "#/rogue"
 }

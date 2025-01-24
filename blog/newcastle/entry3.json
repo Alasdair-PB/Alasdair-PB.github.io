@@ -1,7 +1,7 @@
 {
-  "name": "Conways Game of Life",
-  "text": "Coursework for C4071068 my Advanced Programming module at Newcastle. This project was my first full introduction to C++. The code displays a user interface that simulates Conway's game of life. Alongside this the user may search for specific patterns that can form in the game/ Including: spaceships, Oscillators, Blinkers,and toads. Core features: Threading, parallel programming, Pattern Detection, Templates, Operator overrides, Classes, Inheritance et al. Final Grade: 100/100. https://github.com/Alasdair-PB/ConwaysGameOfLife-C4071068/tree/master",
-  "images": [],
-  "folderPath": "",
-  "date": "17/10/2024"
+  "name": "CSC8502 Coursework prt 2",
+  "text": "Key Features A: Leaves falling from trees as the temperature gets colder and then regrowing when it gets hotter once more. Icicles also hang from the trees in colder weather before melting away. Animation is also included outside of geometry shaders as the runner’s First person hands are visible whenever the camera moves- done using skeletal animation.",
+  "images": ["deferred.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "25/11/2024"
 }

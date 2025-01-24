@@ -2,7 +2,7 @@
   "name": "Unreal Experience",
   "text": "My ongoing journey into learning Unreal.",
   "description" : "From game Jams to personal projects & Dissertations. I'm looking to learn the ins & outs of Unreal development while blogging my experience here.",
-  "images": ["mb_logo.png"],
+  "images": ["unreal.png"],
   "folderPath": "misc/Img/art/",
   "link": "#/unreal"
 }

@@ -1,0 +1,7 @@
+{
+  "name": "CSC8502 Coursework prt 4",
+  "text": "C: Deferred rendering is used to support multiple sphere lights that blend together a cool blue and a warm orange hue as the temperature changes. A Post processing pass is also added to support fog in the distance D: A single light support implementation of shadow mapping- visible in every screenshot, but made obvious here as I removed the other buffer/post processing writes for this image. A single shadow map is used for the full terrain. E: Particle rendering, snowflakes fall from the sky in instance calls, rendering 500 snowflakes each frame",
+  "images": ["shadowmap.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "25/11/2024"
+}

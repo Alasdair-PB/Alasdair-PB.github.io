@@ -1,0 +1,7 @@
+{
+  "name": "CSC8502 Coursework prt 3",
+  "text": "B: Water tessellation, a depth map is used to simulate ice enclosing in from the shallower portions of the lakes. Tessellation is also used to create more accurate water displacements as the water rises as falls by its normal map height. A single plane is tessellated into multiple vertices in this scene.",
+  "images": ["tess.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "25/11/2024"
+}
