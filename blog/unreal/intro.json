@@ -1,8 +1,8 @@
 {
-  "name": "Newcastle",
-  "text": "An ongoing personal project to create a local multiplayer game with asymmetric design.",
-  "description" : "Mouse Blockade takes inspiration from the Orignal Donkey Kong and Tetris in a mash-up asymmetric experience. The mice must escape! The cat must crush them! Stratergies emerge as platforms are created by the blocks the cat drops. ",
+  "name": "Unreal Experience",
+  "text": "My ongoing journey into learning Unreal.",
+  "description" : "From game Jams to personal projects & Dissertations. I'm looking to learn the ins & outs of Unreal development while blogging my experience here.",
   "images": ["mb_logo.png"],
   "folderPath": "misc/Img/art/",
-  "link": "#/mouseBlockade"
+  "link": "#/unreal"
 }

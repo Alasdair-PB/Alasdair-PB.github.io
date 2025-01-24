@@ -1,8 +1,8 @@
 {
-  "name": "Mouse Blockade",
-  "text": "An ongoing personal project to create a local multiplayer game with asymmetric design.",
-  "description" : "Mouse Blockade takes inspiration from the Orignal Donkey Kong and Tetris in a mash-up asymmetric experience. The mice must escape! The cat must crush them! Stratergies emerge as platforms are created by the blocks the cat drops. ",
+  "name": "Rogue (Shooter)",
+  "text": "An ongoing personal project to create a Game from modular systems.",
+  "description" : "Rogue shooter looks to implement the base logic of a top down shoot em up with rogue like progression. Using dialogue trees for character interactions on death & Utility UI for enemy ships. Features are designed first as coding challenges. ",
   "images": ["mb_logo.png"],
   "folderPath": "misc/Img/art/",
-  "link": "#/mouseBlockade"
+  "link": "#/rogue"
 }
