@@ -1,7 +1,7 @@
 {
   "name": "Creating Recursive Projectile formations",
-  "text": "",
+  "text": "Projectiles from enemies need to be able to take any pattern, offset, duration and release cycle. To make a generic system that accommodates for this I leaned heavily into creating data structures that could be strung together to make a vast variety of patterns. At its base I have bullets projected out every X seconds, y times, with a start delay of Z for each projectile in an array given direction, position : A, B. From this I can make simple burst patterns and clock formations. Then using other data structures I created more logic states that can: Layer the pattern with another, loop a given pattern, schedule patterns one after the other and reverse them. Each of these logic bricks can be stacked within each other allowing for schedules of layered patterns & more. [Future updates will look at turning these systems into a graph tool]. ",
   "images": [],
   "folderPath": "",
-  "date": "26/03/2024"
+  "date": "09/07/2024"
 }
