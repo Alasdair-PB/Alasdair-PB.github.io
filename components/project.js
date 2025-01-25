@@ -34,6 +34,16 @@ class Project extends Json {
 
             <h2>${jsonData.name}</h2>
             <p>${jsonData.text}</p>
+
+            <script>
+              function handleClick(event) {
+                if (event.button === 0) {
+                  navigate('${jsonData.link}');
+                  event.preventDefault(); 
+                }
+              }
+            </script>
+
             <a href="${jsonData.link}" target="_blank" rel="noopener noreferrer">see more</a>
         </div>
         `;
