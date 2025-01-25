@@ -1,7 +1,7 @@
 {
   "name": "Project summary",
   "text": "Rogue looks to create a simple game base that allows the project to go into any direction as I aim to take up each feature as a programming challenge to create independent modular components in hopes of having the option to reuse any feature in future projects. The basis of this project is a roguelike shoot 'em up/ bullet hell. This allows me to look into creating complicated enemy state AI, Generative levels, dialogue systems that update between runs while leaving the game open for any genre shift later on.",
-  "images": [],
-  "folderPath": "",
+  "images": ["roguescope.png"],
+  "folderPath": "misc/Img/art/",
   "date": "05/06/2024"
 }

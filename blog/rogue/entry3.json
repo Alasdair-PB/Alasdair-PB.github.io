@@ -1,7 +1,7 @@
 {
   "name": "Creating Recursive Enemy States",
   "text": "Building from the projectile system I structured enemy states in a similar way. Enemies have actions that can be strung together as schedules and loops. Enemy AI differs though by being state governed where each state has a condition that must be met to end the state, with a setup and OnUpdate method in each. States also have a priority that is taking into account when determining the next action in a Utility based AI system In the future I will add conditions that must be met for the action to be called (e.g a previous state has been actioned)",
-  "images": [],
-  "folderPath": "",
+  "images": ["statelogic.png"],
+  "folderPath": "misc/Img/art/",
   "date": "22/08/2024"
 }

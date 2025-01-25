@@ -1,7 +1,7 @@
 {
   "name": "Creating dialogue logic",
-  "text": "",
-  "images": [],
-  "folderPath": "",
+  "text": "In this dialogue system, dialogue statements are linked to each other by object references. Dialogue has conditions that must be met to transition to optional next dialogue sequences . Additionally, events trigger after set dialogue completes. Using this base it was extremely easy to set up a save system that the player can interact with via dialogue. In the current version talking to all NPCS allows the player to select yes as an option to start the run. Please note if you run the demo the save data will need to be cleared [Delete the mySaveData files in file explorer]- this will be made into an Editor tool and the main menu will allow for a new game file.  The dialogue system will evolve greatly in the upcoming months as I transition it to a graph tool structure and modularize text out of the nodes for localization and lock key systems in the future. I’m also looking to change how the dialogue system gets games Game Data and saves information to better organize my workflows. ",
+  "images": ["roguedialogue.gif"],
+  "folderPath": "misc/gif/Rogue/",
   "date": "8/09/2024"
 }

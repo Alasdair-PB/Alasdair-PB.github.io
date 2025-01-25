@@ -1,7 +1,7 @@
 {
   "name": "Making a re-usable Graph tools package",
-  "text": "",
-  "images": [],
-  "folderPath": "",
+  "text": "The current projectile & dialogue system would both be better suited to a graph assisted tool. To achieve this I’m creating a Unity package that makes it easier to create quick nodes for any data or class type. The package is still ongoing, but in the future you’ll be able to add this to your project like any Unity github package using the package manager. For a code dive check out the github. https://github.com/Alasdair-PB/AlGraphTools Please note it is still very early in development and does not currently build. ",
+  "images": ["graphtools.png"],
+  "folderPath": "misc/Img/art/",
   "date": "20/1/2025"
 }
