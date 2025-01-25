@@ -1,7 +1,7 @@
 {
-  "name": "Constraint Solver",
-  "text": "",
-  "images": ["collision.png"],
+  "name": "Game jam:: Explosive Unboxing",
+  "text": "Before uni began after Christmas, myself along with 4 others decided to work on a Game Jam where we used Unreal. 10 Briefcases, one will kill you the others have hints. Can you figure out which one? This was the concept behind our game. These blog entries will touch upon features I created/ or worked on to a significant degree. Github link:: https://github.com/AlfieOnGit/ExplosiveUnboxing ",
+  "images": ["unrealcpp.png"],
   "folderPath": "misc/Img/art/",
-  "date": "26/03/2024"
+  "date": "20/01/2025"
 }

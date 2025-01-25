@@ -1,5 +1,5 @@
 {
-  "name": "CSC8503 Coursework prt 1",
+  "name": "CSC8503 Coursework prt 2",
   "text": "Pathfinding is implemented using the A* algorithm on a Navigation Mesh exported as a .navmesh file. The NavMesh defines walkable areas as a graph of connected polygons. Player positions are projected onto the NavMesh to determine their current location within a polygon. Then the A* algorithm calculates a path through the graph, and an optional line-of-sight check is done across polygons to smooth the resulting path. Nav agents were created as a parent class for other GameObjects to inherit. Statemachines then use this path to move themselves based on statemachine behavioural tree logic.  ",
   "images": ["nav.png"],
   "folderPath": "misc/Img/art/",

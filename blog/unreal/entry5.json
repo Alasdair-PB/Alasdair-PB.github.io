@@ -1,0 +1,7 @@
+{
+  "name": "Editor Windows, Data Assets & Object Pool System",
+  "text": "When working on the Hint System I looked into creating Editor modules and customizing the Developer facing Data asset view. In the project as of now there is only a dropdown and a button to create the template for a Hint type, but I’m looking to expand this in the future to make it easier to define Hint Types in the required logic order. As a final task for this project I looked at hooking up other team members' code & creating a quick object pooling system for the instantiated briefcases so it would be easier to recycle existing game objects instead of instantiated and destroying new/existing ones. ",
+  "images": ["customeditor.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "20/01/2025"
+}

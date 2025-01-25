@@ -1,7 +1,7 @@
 {
-  "name": "Events, Dialogue System",
-  "text": "",
-  "images": ["collision.png"],
+  "name": "Example Hints",
+  "text": "Around the room I could see mountains of briefcases piled high, each displaying a Number: 1 2 3 4 5 Within each Briefcase I found a Hint: I am brief Case 1 I know: if the Case Number 5 is a Safe case then the Case Number 4 is the Dangerous case I am brief Case 2 I know: the Case Number 5 is a Lying case I am brief Case 3 I know: if the Case Number 2 is a Safe case and the Case Number 2 is a Safe case then the Case Number 4 is the Dangerous case I am brief Case 4 I know: if the Case Number 1 is a Safe case then the Case Number 4 is the Dangerous case I am brief Case 5 I know: the Case Number 1 is not below the Dangerous case Just what could this all mean?",
+  "images": ["caseopen.png"],
   "folderPath": "misc/Img/art/",
-  "date": "26/03/2024"
+  "date": "20/01/2025"
 }

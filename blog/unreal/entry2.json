@@ -1,7 +1,7 @@
 {
-  "name": "Editor Windows, Data Assets & Object Pool System",
-  "text": "",
-  "images": ["collision.png"],
+  "name": "Constraint Solver",
+  "text": "Hints for briefcases are generated procedurally in HintManager.cpp. The manager uses data assets to define Hint types which are built from a series of logic statements: and, If, or, not, is equal, is greater than et al alongside subjects like a safe CaseNumber,  the dangerous case, a liar, a case number, plus more. Where the subjects are chosen to make all Hints true. ",
+  "images": ["unboxing.png"],
   "folderPath": "misc/Img/art/",
-  "date": "26/03/2024"
+  "date": "20/01/2025"
 }

@@ -1,0 +1,7 @@
+{
+  "name": "Events, Dialogue System",
+  "text": "An events system was used to hook up managers & the Dialogue system. Events were stored in DataAssets that allowed for modular designed systems. The dialogue system was modified to allow for dialogue tables to link to other tables based on the current game logic and yes/no answers. Events were also included in the dialogue structs passed to the manager which allowed dialogue specific events to be called after that sequence of dialogue had completed. ",
+  "images": ["blueprints.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "20/01/2025"
+}
