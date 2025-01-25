@@ -34,7 +34,7 @@ class Project extends Json {
 
             <h2>${jsonData.name}</h2>
             <p>${jsonData.text}</p>
-            <a href="javascript:void(0);" onclick="navigate('${jsonData.link}')">see more</a>
+            <a href="${jsonData.link}" target="_blank" rel="noopener noreferrer">see more</a>
         </div>
         `;
         this.shadowRoot.innerHTML += htmlContent;
