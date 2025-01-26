@@ -7,18 +7,7 @@ class Project extends Json {
           const data = await response.json();
   
           if (data && Array.isArray(data.files)) {
-              data.files.sort((a, b) => {
-                  const valueA = this.parseValue(a);
-                  const valueB = this.parseValue(b);
-                  if (valueA && valueB) {
-                      const diff = valueA - valueB;
-                      return this.reverseOrder ? diff : -diff;
-                  } else {
-                      console.log("Invalid value found, no change in order.");
-                      return 0;
-                  }
-              });
-  
+              data.files.sort();
               for (const file of data.files) {
                   await this.loadJSON(`${this.path}/${file}.json`);
               }
@@ -29,8 +18,7 @@ class Project extends Json {
 
       this.shadowRoot.innerHTML += `</div>`;
   }
-  
-    
+
     processData(jsonData) {
       let htmlContent = `
       <div class="text-overlay" 
