@@ -2,7 +2,7 @@ class Project extends Json {
 
     async loadJSONFiles(indexFile) {
       try {
-          this.indexFile = indexFile;
+          this.shadowRoot.innerHTML += `<link rel="stylesheet" href="index.css">  `;
           const response = await fetch(indexFile);
           const data = await response.json();
   
