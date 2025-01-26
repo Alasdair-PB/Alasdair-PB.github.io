@@ -5,38 +5,45 @@ class Json extends HTMLElement {
       this.path = '';
     }
   
+
     connectedCallback() {
       const jsonFolderPath = this.getAttribute('path');
-  
       if (jsonFolderPath) {
-          this.loadJSONFiles(`${this.path}/index.json`);
+          this.loadJSONFiles(`${this.path}/index.json`).catch(error => console.error('Error loading JSON files:', error));
       } else {
           console.error('Missing data-json-folder attribute.');
       }
     }
   
+  
     render() {
     }
   
-    loadJSONFiles(indexFile) {
-      fetch(indexFile)
-        .then(response => response.json())
-        .then(data => {
+    async loadJSONFiles(indexFile) {
+      try {
+          const response = await fetch(indexFile);
+          const data = await response.json();
+  
           if (data && Array.isArray(data.files)) {
-            data.files.forEach(file => {
-                this.loadJSON(`${this.path}/${file}.json`);
-            });
+              for (const file of data.files) {
+                  await this.loadJSON(`${this.path}/${file}.json`);
+              }
           }
-        })
-        .catch(error => console.error('Error loading JSON files list:', error));
-    }
-    
-    loadJSON(file) {
-      fetch(file)
-        .then(response => response.json())
-        .then(data => this.processData(data))
-        .catch(error => console.error('Error loading JSON:', error));
-    }
+      } catch (error) {
+          console.error('Error loading JSON files list:', error);
+      }
+  }
+  
+  async loadJSON(file) {
+      try {
+          const response = await fetch(file);
+          const data = await response.json();
+          this.processData(data);
+      } catch (error) {
+          console.error('Error loading JSON:', error);
+      }
+  }
+  
   
     processData(jsonData) {
       let htmlContent = `

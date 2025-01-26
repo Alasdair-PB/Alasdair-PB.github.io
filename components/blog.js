@@ -6,30 +6,33 @@ class Blog extends Json {
   }
 
 
-  loadJSONFiles(indexFile) {
-    this.indexFile = indexFile;
-    fetch(indexFile)
-        .then(response => response.json())
-        .then(data => {
-            if (data && Array.isArray(data.files)) {
-                data.files.sort((a, b) => {
-                    const valueA = this.parseValue(a);
-                    const valueB = this.parseValue(b);
-                    if (valueA && valueB) {
-                      const diff = valueA - valueB;
-                      return this.reverseOrder ? diff : -diff;
-                    } else {
-                        console.log("Invalid value found, no change in order.");
-                        return 0;
-                    }
-                });
-                data.files.forEach(file => {
-                    this.loadJSON(`${this.path}/${file}.json`);
-                });
+  async loadJSONFiles(indexFile) {
+    try {
+        this.indexFile = indexFile;
+        const response = await fetch(indexFile);
+        const data = await response.json();
+
+        if (data && Array.isArray(data.files)) {
+            data.files.sort((a, b) => {
+                const valueA = this.parseValue(a);
+                const valueB = this.parseValue(b);
+                if (valueA && valueB) {
+                    const diff = valueA - valueB;
+                    return this.reverseOrder ? diff : -diff;
+                } else {
+                    console.log("Invalid value found, no change in order.");
+                    return 0;
+                }
+            });
+
+            for (const file of data.files) {
+                await this.loadJSON(`${this.path}/${file}.json`); 
             }
-        })
-        .catch(error => console.error('Error loading JSON files list:', error));
-  }
+        }
+    } catch (error) {
+        console.error('Error loading JSON files list:', error);
+    }
+}
 
   toggleOrder() {
     console.log("Invalid value found, no change in order.");

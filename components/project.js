@@ -1,55 +1,65 @@
 class Project extends Json {
-  
-    loadJSONFiles(indexFile) {
-        this.shadowRoot.innerHTML += `
-            <link rel="stylesheet" href="index.css">  
-        `;
 
-        fetch(indexFile)
-        .then(response => response.json())
-        .then(data => {
+    async loadJSONFiles(indexFile) {
+      try {
+          this.indexFile = indexFile;
+          const response = await fetch(indexFile);
+          const data = await response.json();
+  
           if (data && Array.isArray(data.files)) {
-            data.files.forEach(file_path => {
-                this.loadJSON(`${file_path}.json`);
-            });
-          }
-        })
-        .catch(error => console.error('Error loading JSON files list:', error));
-
-        this.shadowRoot.innerHTML += `
-            </div>        
-        `;
-    }
-    
-      processData(jsonData) {
-        let htmlContent = `
-        <div class="text-overlay" 
-        
-            style="background-image: url('${jsonData.folderPath}${jsonData.images[0]}'); 
-                background-position: center; 
-                background-size: cover; 
-                background-repeat: no-repeat; 
-                border-radius: 8px; 
-                overflow: hidden;"
-
-            <h2>${jsonData.name}</h2>
-            <p>${jsonData.text}</p>
-
-            <script>
-              function handleClick(event) {
-                if (event.button === 0) {
-                  navigate('${jsonData.link}');
-                  event.preventDefault(); 
-                }
-              }
-            </script>
-
-            <a href="${jsonData.link}" target="_blank" rel="noopener noreferrer">see more</a>
-        </div>
-        `;
-        this.shadowRoot.innerHTML += htmlContent;
-      }
+              data.files.sort((a, b) => {
+                  const valueA = this.parseValue(a);
+                  const valueB = this.parseValue(b);
+                  if (valueA && valueB) {
+                      const diff = valueA - valueB;
+                      return this.reverseOrder ? diff : -diff;
+                  } else {
+                      console.log("Invalid value found, no change in order.");
+                      return 0;
+                  }
+              });
   
+              for (const file of data.files) {
+                  await this.loadJSON(`${this.path}/${file}.json`);
+              }
+          }
+      } catch (error) {
+          console.error('Error loading JSON files list:', error);
+      }
+
+      this.shadowRoot.innerHTML += `</div>`;
+  }
+  
+    
+    processData(jsonData) {
+      let htmlContent = `
+      <div class="text-overlay" 
+      
+          style="background-image: url('${jsonData.folderPath}${jsonData.images[0]}'); 
+              background-position: center; 
+              background-size: cover; 
+              background-repeat: no-repeat; 
+              border-radius: 8px; 
+              overflow: hidden;"
+
+          <h2>${jsonData.name}</h2>
+          <p>${jsonData.text}</p>
+
+          <script>
+            function handleClick(event) {
+              if (event.button === 0) {
+                navigate('${jsonData.link}');
+                event.preventDefault(); 
+              }
+            }
+          </script>
+
+          <a href="${jsonData.link}" target="_blank" rel="noopener noreferrer">see more</a>
+      </div>
+      `;
+      this.shadowRoot.innerHTML += htmlContent;
+    }
+
   
   
     static get observedAttributes() {
