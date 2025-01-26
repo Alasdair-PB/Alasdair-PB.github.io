@@ -2,7 +2,6 @@ class Project extends Json {
 
     async loadJSONFiles(indexFile) {
       try {
-          this.shadowRoot.innerHTML += `<link rel="stylesheet" href="index.css">  `;
           const response = await fetch(indexFile);
           const data = await response.json();
   
@@ -15,8 +14,6 @@ class Project extends Json {
       } catch (error) {
           console.error('Error loading JSON files list:', error);
       }
-
-      this.shadowRoot.innerHTML += `</div>`;
   }
 
     processData(jsonData) {
