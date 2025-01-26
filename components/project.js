@@ -9,7 +9,7 @@ class Project extends Json {
           if (data && Array.isArray(data.files)) {
               data.files.sort();
               for (const file of data.files) {
-                  await this.loadJSON(`${file_path}.json`);
+                  await this.loadJSON(`${file}.json`);
               }
           }
       } catch (error) {
