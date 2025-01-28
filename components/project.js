@@ -29,6 +29,7 @@ class Project extends Json {
               border-radius: 8px; 
               overflow: hidden;"
 
+          <h2>${jsonData.Software}</h2>
           <h2>${jsonData.name}</h2>
           <p>${jsonData.text}</p>
 

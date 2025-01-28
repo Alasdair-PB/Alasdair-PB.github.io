@@ -4,5 +4,7 @@
   "description" : "This project looked to recreate a classic Real-Time-Stratergy experience similar to that of Age of Empires. ",
   "images": ["reeds.png"],
   "folderPath": "misc/Img/art/",
-  "link": "#/lilypad"
+  "link": "#/lilypad",
+  "ProjectLinks": ["Code Owner: Unity"],
+  "Software": "Unity C#"
 }

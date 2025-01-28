@@ -1,7 +1,7 @@
 class Blog extends Json {
   constructor() {
     super();
-    this.reverseOrder = false;
+    this.reverseOrder = true;
     this.indexFile = '';
   }
 

@@ -34,6 +34,9 @@ class Profile extends Json {
 
               <p> ${jsonData.description} </p>
 
+              <p> ${jsonData.ProjectLinks[0]} </p>
+
+
             </div>
 
         `;

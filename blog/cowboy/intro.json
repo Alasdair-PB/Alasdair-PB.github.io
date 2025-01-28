@@ -4,5 +4,7 @@
   "description" : "Using HDRP features was the goal of this project- from HDRP Water, Post processing alongside more complex VFX and shaders. ",
   "images": ["the_west.PNG"],
   "folderPath": "misc/Img/art/",
-  "link": "#/cowboy"
+  "link": "#/cowboy",
+  "ProjectLinks": ["Code Owner: Unity"],
+  "Software": "Unity C#"
 }
