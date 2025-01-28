@@ -33,10 +33,12 @@ class Profile extends Json {
               <p> </p>
 
               <p> ${jsonData.description} </p>
+              
 
-              <p> ${jsonData.ProjectLinks[0]} </p>
-
-
+          ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? `
+            <div class="Github">
+                <a href="${jsonData.ProjectLinks[0]}">Github Repo</a>
+            </div>` : ''}
             </div>
 
         `;
