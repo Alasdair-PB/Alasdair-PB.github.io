@@ -5,6 +5,6 @@
   "images": ["mb_logo.png"],
   "folderPath": "misc/Img/art/",
   "link": "#/mouseBlockade",
-  "ProjectLinks": ["Private Project"],
+  "ProjectLinks": [],
   "Software": "Unity C#"
 }

@@ -5,6 +5,6 @@
   "images": ["the_west.PNG"],
   "folderPath": "misc/Img/art/",
   "link": "#/cowboy",
-  "ProjectLinks": ["Code Owner: Unity"],
+  "ProjectLinks": [],
   "Software": "Unity C#"
 }

@@ -5,6 +5,6 @@
   "images": ["go_hoppip.png"],
   "folderPath": "misc/gif/Meow/",
   "link": "#/meow",
-  "ProjectLinks": ["Code Owner: Unity"],
+  "ProjectLinks": [],
   "Software": "Unity C#"
 }

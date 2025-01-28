@@ -5,6 +5,6 @@
   "images": ["reeds.png"],
   "folderPath": "misc/Img/art/",
   "link": "#/lilypad",
-  "ProjectLinks": ["Code Owner: Unity"],
+  "ProjectLinks": [],
   "Software": "Unity C#"
 }

@@ -5,6 +5,6 @@
   "images": ["gull_skates.PNG"],
   "folderPath": "misc/Img/art/",
   "link": "#/gulls",
-  "ProjectLinks": ["Code Owner: Unity"],
+  "ProjectLinks": [],
   "Software": "Unity C#"
 }
