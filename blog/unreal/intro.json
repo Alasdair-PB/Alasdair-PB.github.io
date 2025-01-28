@@ -4,5 +4,7 @@
   "description" : "From game Jams to personal projects & Dissertations. I'm looking to learn the ins & outs of Unreal development while blogging my experience here.",
   "images": ["unreal.png"],
   "folderPath": "misc/Img/art/",
-  "link": "#/unreal"
+  "link": "#/unreal",
+  "ProjectLinks": ["https://github.com/AlfieOnGit/ExplosiveUnboxing"],
+  "Software": "Unreal"
 }
