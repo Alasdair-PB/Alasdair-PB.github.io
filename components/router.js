@@ -25,15 +25,21 @@ function router() {
     }
 
     const contentDiv = document.getElementById('content');
-
+    loadContent('toolsBar.html').then(html => {
     switch (hash) {
         case '#/home': 
-            loadContent('home.html').then(html => contentDiv.innerHTML = html);
+            const promise = loadContent('home.html');
+            promise.then(content => {
+                contentDiv.innerHTML = html + content; 
+            });
             break;
         default:
-            loadContent('loader.html').then(html => contentDiv.innerHTML = html);
-            break;
-    }
+            const promise2 = loadContent('loader.html');
+            promise2.then(content => {
+                contentDiv.innerHTML = html + content; 
+            });            break;
+    }   
+});
 }
 
 window.onload = function() {

@@ -31,18 +31,11 @@ class Project extends Json {
 
           <h2>${jsonData.Software}</h2>
           <h2>${jsonData.name}</h2>
-          <p>${jsonData.text}</p>
 
-          <script>
-            function handleClick(event) {
-              if (event.button === 0) {
-                navigate('${jsonData.link}');
-                event.preventDefault(); 
-              }
-            }
-          </script>
-
-          <a href="${jsonData.link}" target="_blank" rel="noopener noreferrer">see more</a>
+          <div class="hide-on-mobile">
+            <p>${jsonData.text}</p>
+          </div>
+          <a href="${jsonData.link}" id="myLink">See more</a>
       </div>
       `;
       this.shadowRoot.innerHTML += htmlContent;
@@ -57,7 +50,6 @@ class Project extends Json {
     attributeChangedCallback(name, oldValue, newValue) {
       if (oldValue !== newValue) {
           this[name] = newValue;
-          this.render();
       }
     }
   }

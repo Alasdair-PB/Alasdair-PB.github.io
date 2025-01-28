@@ -13,10 +13,10 @@ class Blogger extends Json {
     processData(jsonFolderPath) {
         let htmlContent = `
             <link rel="stylesheet" href="index.css">  
-
             <blog-component 
                 class="card-container"
-                path=${jsonFolderPath}>
+                path=${jsonFolderPath}
+                myIndexFile = "index">
             </blog-component>
         `;
         this.shadowRoot.innerHTML += htmlContent;

@@ -65,15 +65,25 @@ body {
 }
 
 .portfolio h1{
-  padding-left:  5%;
+  padding-left:  10%;
   color: var(--primary-text-color);
+}
+
+.portfolio h2{
+  padding-left:  10%;
+  color: var(--primary-text-color);
+  margin-top: 1.1%;
+
+
 }
 
 .portfolio-container {
   display: flex;
   align-items: center; 
-  gap: 10px; 
+  gap: 20px; 
   color: var(--primary-text-color);
+  margin-top: 0;
+
 }
 
 @media screen and (max-width: 900px) {
@@ -198,12 +208,24 @@ body {
   height: auto;
 }
 
+.intro .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-text-color);
+  gap: 10px;
+}
+
+
 .links {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 10px;
+  color: var(--primary-text-color);
   gap: 10px;
 }
 
@@ -318,9 +340,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(.1px); /* Blurs the area behind the text */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay to the blur for better readability */
-  z-index: -1; /* Places the blur behind the text */
+  backdrop-filter: blur(.1px);
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
 }
 
 .card img {

@@ -1,29 +1,28 @@
 class Json extends HTMLElement {
-    constructor() {
+  constructor() {
       super();
       this.attachShadow({ mode: 'open' });
-      this.path = '';
-    }
-  
+  }
 
-    connectedCallback() {
-      const jsonFolderPath = this.getAttribute('path');
-      if (jsonFolderPath) {
-          this.loadJSONFiles(`${this.path}/index.json`).catch(error => console.error('Error loading JSON files:', error));
+  connectedCallback() {
+      const path = this.getAttribute('path');
+      const myIndexFile = this.getAttribute('myIndexFile');
+
+      if (path && myIndexFile) {
+          this.path = path;
+          this.myIndexFile = myIndexFile;
+          this.loadJSONFiles(`${this.path}/${this.myIndexFile}.json`)
+              .catch(error => console.error('Error loading JSON files:', error));
       } else {
-          console.error('Missing data-json-folder attribute.');
+          console.error('Missing required attributes: path or myIndexFile.');
       }
-    }
-  
-  
-    render() {
-    }
-  
-    async loadJSONFiles(indexFile) {
+  }
+
+  async loadJSONFiles(indexFile) {
       try {
           const response = await fetch(indexFile);
           const data = await response.json();
-  
+
           if (data && Array.isArray(data.files)) {
               for (const file of data.files) {
                   await this.loadJSON(`${this.path}/${file}.json`);
@@ -33,7 +32,7 @@ class Json extends HTMLElement {
           console.error('Error loading JSON files list:', error);
       }
   }
-  
+
   async loadJSON(file) {
       try {
           const response = await fetch(file);
@@ -43,14 +42,13 @@ class Json extends HTMLElement {
           console.error('Error loading JSON:', error);
       }
   }
-  
-  
-    processData(jsonData) {
+
+  processData(jsonData) {
       let htmlContent = `
       <link rel="stylesheet" href="index.css">
       <div class="blog">
       `;
-    
+
       if (jsonData.images && Array.isArray(jsonData.images)) {
           jsonData.images.forEach(imageFilename => {
               htmlContent += `<img src="${jsonData.folderPath}/${imageFilename}">`;
@@ -58,25 +56,13 @@ class Json extends HTMLElement {
       }
 
       htmlContent += `          
-        <h2>${jsonData.name}</h2> 
-        <p>${jsonData.text}</p> 
-    `;
-      
+          <h2>${jsonData.name}</h2> 
+          <p>${jsonData.text}</p> 
+      `;
+
       htmlContent += `</div>`;
       this.shadowRoot.innerHTML += htmlContent;
-      
-      }
-  
-    static get observedAttributes() {
-      return ['path'];
-    }
-  
-    attributeChangedCallback(name, oldValue, newValue) {
-      if (oldValue !== newValue) {
-          this[name] = newValue;
-          this.render();
-      }
-    }
   }
-  
-  customElements.define('json-component', Json);
+}
+
+customElements.define('json-component', Json);

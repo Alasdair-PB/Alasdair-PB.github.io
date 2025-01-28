@@ -23,29 +23,16 @@ class Profile extends Json {
               <img src='${jsonData.folderPath}${jsonData.images[0]}'>
               <h1 class="title">${jsonData.name}</h1>
               <h2>About this project</h2>
-
               <div class="arrow-text">
-
                   ${jsonData.text}
-
               </div>
-
-              <p> </p>
-
               <p> ${jsonData.description} </p>
-              
-
-          ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? `
-            <div class="Github">
-                <a href="${jsonData.ProjectLinks[0]}">Github Repo</a>
-            </div>` : ''}
+              ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? `
+              <a class="intro" href="${jsonData.ProjectLinks[0]}">Github Repo</a>` : ''}
             </div>
-
         `;
         this.shadowRoot.innerHTML += htmlContent;
     }
-  
-  
   
     static get observedAttributes() {
       return [];
