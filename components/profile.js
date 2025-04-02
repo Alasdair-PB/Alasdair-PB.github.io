@@ -18,7 +18,6 @@ class Profile extends Json {
     processData(jsonData) {
         let htmlContent = `
             <link rel="stylesheet" href="index.css">  
-
             <div class="intro">
               <img src='${jsonData.folderPath}${jsonData.images[0]}'>
               <h1 class="title">${jsonData.name}</h1>
@@ -27,8 +26,8 @@ class Profile extends Json {
                   ${jsonData.text}
               </div>
               <p> ${jsonData.description} </p>
-              ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? `
-              <a class="intro" href="${jsonData.ProjectLinks[0]}">Github Repo</a>` : ''}
+              ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? jsonData.ProjectLinks.map((link, index) => `
+                <a class="intro" href="${link}">${jsonData.ProjectNames && jsonData.ProjectNames[index] ? jsonData.ProjectNames[index] : 'Github Repo'}</a>`).join('') : ''}
             </div>
         `;
         this.shadowRoot.innerHTML += htmlContent;

@@ -57,21 +57,35 @@ class Blog extends Json {
     let htmlContent = `
       <link rel="stylesheet" href="index.css">
       <div class="blog">
-      `;
-    
+    `;
+  
     if (jsonData.images && Array.isArray(jsonData.images)) {
-        jsonData.images.forEach(imageFilename => {
-            htmlContent += `<img src="${jsonData.folderPath}${imageFilename}">`;
-        });
+      jsonData.images.forEach(imageFilename => {
+        htmlContent += `<img src="${jsonData.folderPath}${imageFilename}">`;
+      });
     }
-
-    htmlContent += `          
-      <h2>${jsonData.name}</h2> 
+  
+    htmlContent += `
+      <h2>${jsonData.name}</h2>
       <hr>
       <p>${jsonData.text}</p>
-      <p>last updated: ${jsonData.date}</p>
+      <p>Last updated: ${jsonData.date}</p>
     `;
-      
+  
+    if (jsonData.Videos && Array.isArray(jsonData.Videos) && jsonData.Videos.length > 0) {
+      jsonData.Videos.forEach(videoUrl => {
+        const videoIdMatch = videoUrl.match(/(?:youtu\.be\/|youtube\.com\/(?:.*v=|embed\/|v\/|.*[?&]v=))([^"&?\/\s]{11})/);
+        if (videoIdMatch && videoIdMatch[1]) {
+          const videoId = videoIdMatch[1];
+          htmlContent += `
+            <div class="video-container">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+            </div>
+          `;
+        }
+      });
+    }
+  
     htmlContent += `</div>`;
     this.shadowRoot.innerHTML += htmlContent;
   }

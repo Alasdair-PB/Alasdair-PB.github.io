@@ -17,30 +17,24 @@ class Project extends Json {
       }
       this.shadowRoot.innerHTML += `</div>`;
   }
+  
+  processData(jsonData) {
+    let textOverlay = document.createElement("div");
+    textOverlay.classList.add("project-overlay");    
+    textOverlay.classList.add("text-overlay");
 
-    processData(jsonData) {
-      let htmlContent = `
-      <div class="text-overlay" 
-      
-          style="background-image: url('${jsonData.folderPath}${jsonData.images[0]}'); 
-              background-position: center; 
-              background-size: cover; 
-              background-repeat: no-repeat; 
-              border-radius: 8px; 
-              overflow: hidden;"
-
-          <h2>${jsonData.Software}</h2>
-          <h2>${jsonData.name}</h2>
-
-          <div class="hide-on-mobile">
-            <p>${jsonData.text}</p>
-          </div>
-          <a href="${jsonData.link}" id="myLink">See more</a>
-      </div>
-      `;
-      this.shadowRoot.innerHTML += htmlContent;
-    }
-
+    textOverlay.style.backgroundImage = `url('${jsonData.folderPath}${jsonData.images[0]}')`;
+    textOverlay.innerHTML += `
+        <h2>${jsonData.Software}</h2>
+        <h2>${jsonData.name}</h2>
+        <div class="hide-on-mobile">
+          <p>${jsonData.text}</p>
+        </div>
+        <a href="${jsonData.link}" id="myLink">See more</a>
+    `;
+  
+    this.shadowRoot.appendChild(textOverlay);
+  }
   
   
     static get observedAttributes() {
