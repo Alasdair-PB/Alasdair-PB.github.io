@@ -1,8 +1,8 @@
 {
-  "name": "CSC8507/8 Coursework prt 1",
-  "text": "",
+  "name": "CSC8507/8 Group:: Project Summary",
+  "text": "In our group project players join lobbies and navigate through a procedural dungeon, finding items, picking them up and bringing them back to the starting room where you drop them on the green pads to earn currency. You can interact with the blue pads to transfer your currency from the inventory to your stored currency. Interacting with the red pad will exit the game. The full game can be played across the network.",
   "images": [],
   "folderPath": "misc/Img/art/",
-  "Videos": ["https://youtu.be/CDocuHMd9Sw"],
+  "Videos": ["https://youtu.be/-x3eM8zoQJ0"],
   "date": "16/12/2024"
 }

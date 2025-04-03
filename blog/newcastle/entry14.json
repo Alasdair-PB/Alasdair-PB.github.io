@@ -1,0 +1,8 @@
+{
+  "name": "CSC8507/8 Group Project::Miscellaneous ",
+  "text": "During this project I also made sure to help others in my teams by working with them to create feature plans and integrate systems together. As part of this I hooked the InventorySystem with the PlayerController to make players able to pick up items and worked with our UI developer to switch to a pushdown automata system to allow menus to be stacked & backtracked. To keep track of tasks I also set up a group Jira board & performed multiple code reviews and PRs on features before they went through into main. As a result we had practically no issues when merging features and working together to integrate systems.",
+  "images": ["item_pickup.png"],
+  "folderPath": "misc/Img/art/",
+  "Videos": [],
+  "date": "16/12/2024"
+}

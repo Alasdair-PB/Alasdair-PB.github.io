@@ -1,0 +1,8 @@
+{
+  "name": "CSC8507/8 Group Project:: Components and ECS",
+  "text": "As part of my role in the group project I set up a Component system with elements of a ECS design philosophy, storing all components in buffers by types allowing systems to quickly iterate over Components. In addition, I configured this system to work as part of the networked game loop including INetworkComponents and variations that can send events, delta & full packets. To set this up I also reworked the client server base system from the previous module to properly support player spawning and client connection. Check out ComponentManager.h, NetworkedGame.cpp, and IComponent.h/ INetworkComponent.h on the github for an overview and explore our wiki page for a breakdown on how to use it.",
+  "images": ["Components.png"],
+  "folderPath": "misc/Img/art/",
+  "Videos": [],
+  "date": "16/12/2024"
+}
