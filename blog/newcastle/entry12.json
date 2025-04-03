@@ -2,7 +2,7 @@
   "name": "CSC8507/8 Group Project::The Save `any type` System",
   "text": "Going further, I created a save data system that allows any type of data to be saved and read. Using ISerializedData::CreateGameData<T>(saveInfo) any type of value can be saved from ints, to containers like structs and arrays of vectors. Using this system I made a system to save Worlds, GameObjects & Components to a custom binary file type called pFabs. This allows one version of an asset to be saved and then loaded into the world with its data copied to other objects. Meaning we had the setup to create a custom Editor. Check out `SaveManager.h` to learn how this was done.",
   "images": ["save_samples.png"],
-  "folderPath": "misc/Img/art/",
+  "folderPath": "Misc/Img/art/",
   "Videos": [],
   "date": "16/12/2024"
 }
