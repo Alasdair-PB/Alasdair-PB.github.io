@@ -1,7 +1,7 @@
 {
   "name": "CSC8502 Coursework prt 1: Lighting, Tess & Geometry showcase",
   "text": "CSC8502 Coursework 2024/25. Coursework for my Graphics & rendering module. The code base was written using C++ & Opengl alongside shaders coded in GLSL.",
-  "images": ["showcase.png"],
+  "images": [],
   "folderPath": "misc/Img/art/",
   "Videos": ["https://youtu.be/KN5iCqhPOUs"],
   "date": "17/10/2024"

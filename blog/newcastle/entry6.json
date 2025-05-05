@@ -1,7 +1,7 @@
 {
   "name": "CSC8503 Coursework prt 1",
   "text": "Walk around a nav mesh world, in this ‘Pikmin’ inspired course work. Create your cat swarm by gathering kittens and throw them at dangerous geese wandering around the world. Main features: Collision, physics, state machines, boids, path finding, nav mesh, and light netcode.",
-  "images": ["swarm.png"],
+  "images": [],
   "folderPath": "misc/Img/art/",
   "Videos": ["https://youtu.be/ZxK5PkyDek4"],
   "date": "16/12/2024"
