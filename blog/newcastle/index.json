@@ -1,13 +1,15 @@
 {
     "files": [
       "entry1",
-      "entry2",
+      "entry2A",
+      "entry2B",
       "entry3",
       "entry4",
       "entry5",
       "entry6",
       "entry7",
       "entry8",
-      "entry9"
+      "entry9",
+      "entry10"
     ]
 }
