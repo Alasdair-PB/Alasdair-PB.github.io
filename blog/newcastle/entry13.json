@@ -1,0 +1,8 @@
+{
+  "name": "CSC8507/8 Group Project::Creating a custom Editor",
+  "text": "To speed up development when creating assets, a custom editor was created that allows Pfabs to be loaded into the editor, modified and then saved. The Editor is a different Build mode to the game and is built using CMake and the option ‘windows-editor-build’ meaning values and classes needed only for the Editor do not compile with the final game. Components have their variables exposed such that they can be edited and saved when changes are made. In the video below I showcase loading an asset, modifying transforms, clearing the world, adding new gameObjects, adding tags and adding/ modifying components. The Editor currently has some notable usability issues as it was made to target areas needed for this project like modifying the Room prefabs, setting `ground` tags and door locations for the dungeon generation. However I’m looking to expand on it in the future. Check out `Inpsector.h`, `GameObject.h`, `IComponent.h` and `RoomPrefab.cpp` to learn how this was done.",
+  "images": [],
+  "folderPath": "misc/Img/art/",
+  "Videos": ["https://youtu.be/CDocuHMd9Sw"],
+  "date": "16/12/2024"
+}

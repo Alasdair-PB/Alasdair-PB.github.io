@@ -1,0 +1,8 @@
+{
+  "name": "CSC8507/8 Group Project::Network Rollback",
+  "text": "To fully sync players across the network I investigated a rollback solution where inputs are sent across the network on key presses. This system then runs for a set amount of frames before full/ delta packets are sent across that roll back the current state of a player if it is misaligned with the new packet. This is most obvious in the player movement, but also is applied to network areas like the inventory and drop off/ sell feature  where items picked up will be moved to a different inventory if the prediction was incorrect and items will be removed and resold depending on the items state. This system ensures that movement across the network is smooth. To fully implement this feature, packets have time stamps and can be organised/ or discarded if the packet is no longer useful. Check out `InputNetworkComponent.h` to learn how this was done.",
+  "images": [],
+  "folderPath": "misc/Img/art/",
+  "Videos": [],
+  "date": "16/12/2024"
+}

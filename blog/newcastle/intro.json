@@ -5,8 +5,13 @@
   "images": ["newcastlewinter.jpg"],
   "folderPath": "misc/Img/art/",
   "link": "#/newcastle",
-  "ProjectLinks": ["https://github.com/Alasdair-PB/CSC8502CourseWork", "https://github.com/Alasdair-PB/CSC8503TutorialWork", "https://github.com/Alasdair-PB/ConwaysGameOfLife-C4071068"],
+  "ProjectLinks": [
+    "https://github.com/Alasdair-PB/CSC8508", 
+    "https://github.com/Alasdair-PB/CSC8502CourseWork", 
+    "https://github.com/Alasdair-PB/CSC8503TutorialWork", 
+    "https://github.com/Alasdair-PB/ConwaysGameOfLife-C4071068"],
   "ProjectNames": [
+    "CSC8508/7 Group Project",
     "CSC8502 Course Work",
     "CSC8503 Tutorial Work",
     "Conway's Game of Life"
