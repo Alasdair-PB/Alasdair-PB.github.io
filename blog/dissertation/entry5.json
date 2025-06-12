@@ -1,0 +1,7 @@
+{
+  "name": "Vertex Factories & Scene Proxies",
+  "text": "So far, meshes have been rendered using Unreal’s UProcedural mesh component. The drawback, however, is that this pushes the mesh creation onto the CPU after the Compute process has finished. To gain better performance we can instead employ Unreals scene proxy and vertex factory systems to keep the mesh buffer info on the GPU so it can persist between frames.",
+  "folderPath": "misc/Img/art/",
+  "date": "12/06/2025"
+}
+

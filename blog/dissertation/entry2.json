@@ -1,0 +1,6 @@
+{
+  "name": "Octrees",
+  "text": "An octree divides our voxel body into different leaves that subdivide further based on a determining factor. In this project the Octree will divide based on the player's distance from the camera. This Level of detail (LOD) system using Octree allows voxel bodies closer to the player to be rendered in higher detail while distant objects to be rendered in lower detail. When rendering our voxel data we can provide just the relevent leaf nodes to our system.",
+  "folderPath": "misc/Img/art/",
+  "date": "12/06/2025"
+}

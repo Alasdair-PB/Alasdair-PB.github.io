@@ -1,0 +1,6 @@
+{
+  "name": "Spherical noise",
+  "text": "To use MC we first need to populate the point grid. To do this compute shaders were once again deployed to populate the grid based on the points distance from the center giving us a spherical base that we can later make more complicated to render out planets.",
+  "folderPath": "misc/Img/art/",
+  "date": "12/06/2025"
+}
