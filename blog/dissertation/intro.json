@@ -2,7 +2,7 @@
   "name": "Dissertation",
   "text": "Creating an Unreal Plugin for Voxel environments",
   "description": "In my dissertation I designed and implemented a voxel based systems that allows users to create destructible environments. The project is still currently ongoing.",
-  "images": [ "diss.PNG" ],
+  "images": [ "diss_sphere.jpg" ],
   "folderPath": "misc/Img/art/",
   "link": "#/dissertation",
   "ProjectLinks": [ "https://github.com/Alasdair-PB/2025Dissertation" ],
