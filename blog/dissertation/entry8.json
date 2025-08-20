@@ -1,0 +1,7 @@
+{
+  "name": "MarchingCubes_TypePass",
+  "text": "Here I introduced type values into the resultant shader and added support for raycast collisions. Using the VertexFactory.ush file created alongside the vertex factory I can pass data from the vertex factory to the material. Here Type is provided as the x channel in our vertex colour. To showcase Type values, a Biome generator compute pass was introduced that checks for surface isoVales then uses that to assign either the surface type grass or rock. The isoValue generator was also modified to support layered planets using perlin noise. Raycasts collisions were also introduced, to do this I implemented a CPU side marching cubes algorithm. When the ray intersects the voxel’s bounding box a check begins between the entry and exit point. In the check, if an isoValue is greater than the isoLevel then the marching cubes triangle is created for this point and then used for a triangle intersection check.",
+  "images": ["GenSampleB.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "20/08/2025"
+}

@@ -1,6 +1,6 @@
 {
-  "name": "Octrees",
-  "text": "An octree divides our voxel body into different leaves that subdivide further based on a determining factor. In this project the Octree will divide based on the player's distance from the camera. This Level of detail (LOD) system using Octree allows voxel bodies closer to the player to be rendered in higher detail while distant objects to be rendered in lower detail. When rendering our voxel data we can provide just the relevent leaf nodes to our system.",
+  "name": "Setting up",
+  "text": "To set up for deformation I’m using a voxel map to define my terrain. In a voxel map each point defines the offset from the ground level known as an isolevel. To render this data as geometry I use the marching cubes algorithm that transverses this data and checks for cases where an above ground point neighbours below ground points. This check is done for each cell, where a cell has 8 corner values. A case table is then used to determine what geometry is suitable for all active corners. This is the basics of marching cubes.",
   "folderPath": "misc/Img/art/",
   "date": "12/06/2025"
 }

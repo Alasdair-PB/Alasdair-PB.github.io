@@ -1,6 +1,6 @@
 {
-  "name": "Marching cubes",
-  "text": "Marching cubes (MC) is an algorithm that utilizes a grid of points to represent points above a set isolevel. Using MC we can render out a surface for each point above the isolevel. To make this possible in unreal compute shaders were employed to dispatch a shader that performs marching cubes on each leaf in the Octree. The compute shader is an async operation dispatched to the GPU, freeing up our CPU for better suited actions. Once Marching cubes is completed the output indicies and vertices are returned in a buffer that can be passed to a UProcedural mesh.",
+  "name": "Base Marching Cubes",
+  "text": "To get my base version of the marching cubes algorithm I created two compute shaders, one to generate the isovalues on startup and the other to get the vertex data from the marching cubes algorithm. In the isoValue generator pass, I am simply setting isoValue by distance from the center- forming the sphere you can see on screen. In my marching cubes pass, each node writes to a vertex buffer that is returned from a callback and used to create a UProcedural mesh each frame.",
   "images": ["sphere.png"],
   "folderPath": "misc/Img/art/",
   "date": "12/06/2025"

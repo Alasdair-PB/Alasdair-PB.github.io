@@ -1,0 +1,7 @@
+{
+  "name": "Transition Cells",
+  "text": "This works great, but you can see gaps between the different levels of detail when a high res node borders a low res node. I need transition cells to add a mesh that covers these gaps. To do this, octrees first needed to be balanced, such that a node never borders another node that is greater than one level of detail different. I then needed to do an adjacency check to know what the neighbours of each node are and if there is a difference in LOD. Then I have another Compute pass for each bordering cell, these cells use the buffers from the low res cell and 4 adjacent high res cells. There is only a possible maximum of 3 transition cells each cell and the pass logic is similar to Marching cubes, however it uses a new case table and requires rotations to be applied to the final result based on the cells direction. After this was all done, I added some small polish including UI icons, texture painting and VFX.",
+  "images": ["transitionCells.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "20/08/2025"
+}

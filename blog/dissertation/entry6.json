@@ -1,0 +1,6 @@
+{
+  "name": "The Deformation Refactor",
+  "text": "To get deformation I reworked a lot of the logic behind the octree. In prior branches the isoValues were given to the octree and then passed to each node who then stored a mipmap of this data in an array, but I need to change this data every frame so I can’t keep it in the cpu. Here I instead replace that process by providing each octree node its own vertex factory and an allotted isoValue buffer. With this I can have an octree node for each resolution that outputs into its own vertex buffer allowing meshBatches to be built from the combined mesh batches of only visible nodes by the SceneProxy. The isoValue buffer is defaulted as zero when you enter play and is then filled by a new compute pass seen in the file deformation.usf.",
+  "folderPath": "misc/Img/art/",
+  "date": "20/08/2025"
+}

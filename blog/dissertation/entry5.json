@@ -1,7 +1,7 @@
 {
   "name": "Vertex Factories & Scene Proxies",
-  "text": "So far, meshes have been rendered using Unreal’s UProcedural mesh component. The drawback, however, is that this pushes the mesh creation onto the CPU after the Compute process has finished. To gain better performance we can instead employ Unreals scene proxy and vertex factory systems to keep the mesh buffer info on the GPU so it can persist between frames.",
+  "text": "After I had this base, I removed the UProcedural mesh dependency and instead created my own vertex factory and scene proxy. Using these two classes I can tell Unreal how to read the vertex data of the voxel body. Making it possible to communicate directly with the unreal rendering pipeline and define my own buffers that can be kept on the gpu. ",
+  "images": ["mesh_pipeline.png"],
   "folderPath": "misc/Img/art/",
   "date": "12/06/2025"
 }
-

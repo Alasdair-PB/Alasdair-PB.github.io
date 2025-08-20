@@ -1,0 +1,7 @@
+{
+  "name": "Deformation.usf",
+  "text": "In deformation.usf I do the same mipmapping procedure that I did on startup before, but now each frame and only for visible nodes. An additional buffer is also introduced for delta isoValues that is initialised as 0. Deformation is done by a radius check from a position within the bounds of the voxel body. If isoDeltaValues are within range they are modified on the CPU and marked as dirty. Later the Octree checks for dirty values then runs a memory copy pass to the GPU buffer. In deformation.usf I then add this data to the resultant mipmapped values to apply deformation.",
+  "images": ["deformationSample.png"],
+  "folderPath": "misc/Img/art/",
+  "date": "20/08/2025"
+}

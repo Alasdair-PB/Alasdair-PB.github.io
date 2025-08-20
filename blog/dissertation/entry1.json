@@ -1,6 +1,7 @@
 {
-  "name": "Project summary",
-  "text": "The aim of this dissertation is to create a Plugin that allows users to create a voxel based destructible enviornment. In each sections I'll be describing the journey of this process and the results of my project.",
+  "name": "Terraforming with Voxel Systems in the Unreal Engine",
+  "text": "For my dissertation, I created a Plugin that allows users to create a voxel based destructible enviornment. Check out the video showcase below and read more about how I did it.",
   "folderPath": "misc/Img/art/",
+  "Videos": ["https://www.youtube.com/watch?v=CKNiDJPdLQk"],
   "date": "12/06/2025"
 }

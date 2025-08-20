@@ -1,6 +1,7 @@
 {
-  "name": "Spherical noise",
-  "text": "To use MC we first need to populate the point grid. To do this compute shaders were once again deployed to populate the grid based on the points distance from the center giving us a spherical base that we can later make more complicated to render out planets.",
+  "name": "Octrees",
+  "text": "An octree divides the voxel body into different leaves that subdivide further based on a determining factor. For this Dissertation, the Octree divides based on the player's distance from the camera. This Level of detail (LOD) system using Octree allows voxel bodies closer to the player to be rendered in higher detail while distant objects to be rendered in lower detail. When rendering the voxel data we can provide just the relevent leaf nodes to the system.",
+  "images": ["octreedivB.png"],
   "folderPath": "misc/Img/art/",
   "date": "12/06/2025"
 }
