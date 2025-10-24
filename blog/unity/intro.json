@@ -1,0 +1,10 @@
+{
+  "name": "Software Eng at Unity Portfolio",
+  "text": "A portfolio of projects developed during my time at Unity",
+  "description" : "At Unity I created a range of game demos that explored the latest Unity features and maintained these projects for benchmark testing future releases using Jenkins deployment, Unit Testing and Upgrade Testing.",
+  "images": ["gull_skates.PNG"],
+  "folderPath": "misc/Img/art/",
+  "link": "#/unity",
+  "ProjectLinks": [],
+  "Software": "Unity C#"
+}
