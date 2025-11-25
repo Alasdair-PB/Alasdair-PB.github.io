@@ -5,8 +5,12 @@
   --primary-background-color: #0f0f0f;
   --primary-text-color: #ffffff;
   --secondary-text-color: #ffffff;
+  --primary-border-color: #4f4f4f;
+
   --primary-divider-color: #ffffff;
   --border: 1px solid  var(--primary-divider-color);
+  --card-border: 1px solid  var(--primary-border-color);
+
   --spacing: 10px; /* Define a standard spacing */
   --main-font: 'Arial', sans-serif; /* Define a font */
 }
@@ -413,7 +417,7 @@ body {
   margin-top: 20px;
   background-color: #1e1e1e;
   color: var(--primary-text-color);
-  border: var(--border);
+  border: var(--card-border);
   border-radius: 8px;
   box-sizing: border-box; 
   overflow: auto;
