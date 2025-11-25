@@ -204,9 +204,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-
   font-size: .5em;
-
 }
 
 .intro p{
@@ -408,6 +406,8 @@ body {
   margin-top: 20px;
   background-color: #1e1e1e;
   color: var(--primary-text-color);
+  border: var(--border);
+  border-radius: 8px;
   box-sizing: border-box; 
   overflow: auto;
   font-size: .5em;
