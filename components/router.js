@@ -5,7 +5,7 @@ let navigationShell;
 let navigationShellPromise;
 const minimumLoadingDuration = 1900;
 
-function showLoading() {
+function resetLoading() {
     const loading = document.getElementById('loading');
     if (!loading) {
         return;
@@ -14,9 +14,17 @@ function showLoading() {
     clearTimeout(loadingDismissTimer);
     clearTimeout(loadingHideTimer);
     loading.style.display = 'flex';
-    loading.classList.add('is-resetting');
     loading.classList.remove('is-complete', 'is-dismissing', 'is-loading');
+    loading.classList.add('is-resetting');
     void loading.offsetWidth;
+}
+
+function startLoading() {
+    const loading = document.getElementById('loading');
+    if (!loading) {
+        return;
+    }
+
     loading.classList.remove('is-resetting');
     void loading.offsetWidth;
     loading.classList.add('is-loading');
@@ -93,9 +101,14 @@ function navigate(hash) {
 
 function updateNavigation(hash) {
     const route = hash.replace(/^#\/?/, '').trim();
-    const pageTitle = route && route !== 'home'
+    const routeTitles = {
+        rogue: 'Tooling',
+        mouseBlockade: 'Games',
+        newcastle: 'Coursework'
+    };
+    const pageTitle = routeTitles[route] || (route && route !== 'home'
         ? route.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]/g, ' ')
-        : 'Portfolio';
+        : 'Portfolio');
     const currentPage = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1);
     document.title = `${currentPage} | Alasdair PB`;
     const breadcrumb = document.querySelector('.breadcrumb-current');
@@ -151,7 +164,7 @@ function router() {
 
     const navigationId = ++currentNavigation;
     let startedAt = performance.now();
-    showLoading();
+    resetLoading();
     const contentDiv = document.getElementById('content');
 
     Promise.all([
@@ -175,9 +188,10 @@ function router() {
 
         updateNavigation(hash);
         if (!loading) {
-            showLoading();
-            startedAt = performance.now();
+            resetLoading();
         }
+        startLoading();
+        startedAt = performance.now();
 
         await Promise.all([
             waitForPageContent(),
@@ -185,17 +199,29 @@ function router() {
         ]);
 
         completeLoading(navigationId);
-    }).catch(error => {
+    }).catch(async error => {
         if (navigationId !== currentNavigation) {
             return;
         }
         console.error('Error loading page:', error);
-        contentDiv.innerHTML = `${navigationShell || ''}<main class="container"><p>Error loading page content.</p></main></div>`;
         const loading = document.getElementById('loading');
-        if (!loading) {
+        if (loading) {
+            loading.remove();
+        }
+        contentDiv.innerHTML = `${navigationShell || ''}<main class="container"><p>Error loading page content.</p></main></div>`;
+        const renderedLoading = document.getElementById('loading');
+        if (loading && renderedLoading) {
+            renderedLoading.replaceWith(loading);
+        }
+        if (!document.getElementById('loading')) {
             return;
         }
-        showLoading();
+        if (!loading) {
+            resetLoading();
+        }
+        startLoading();
+        startedAt = performance.now();
+        await waitForMinimumLoadingTime(startedAt);
         completeLoading(navigationId);
     });
 }

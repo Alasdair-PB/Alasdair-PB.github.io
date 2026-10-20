@@ -3,13 +3,21 @@ class Project extends Json {
     async loadJSONFiles(indexFile) {
       try {
         this.shadowRoot.innerHTML += `<link rel="stylesheet" href="index.css">  `;
-          const response = await fetch(indexFile);
-          const data = await response.json();
+          const data = await this.getJSON(indexFile);
   
           if (data && Array.isArray(data.files)) {
               data.files.sort();
-              for (const file of data.files) {
-                  await this.loadJSON(`${file}.json`);
+              const projects = data.files.map(file => this.getJSON(`${file}.json`)
+                  .then(project => ({ project }))
+                  .catch(error => {
+                      console.error('Error loading JSON —', error);
+                      return { project: null };
+                  }));
+              for (const projectPromise of projects) {
+                  const { project } = await projectPromise;
+                  if (project) {
+                      this.processData(project);
+                  }
               }
           }
       } catch (error) {

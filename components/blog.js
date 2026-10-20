@@ -4,6 +4,7 @@ class Blog extends Json {
     this.reverseOrder = true;
     this.indexFile = '';
     this.entryCount = 0;
+    this.hasPriorityImage = false;
   }
 
 
@@ -11,6 +12,7 @@ class Blog extends Json {
     try {
         this.indexFile = indexFile;
         this.entryCount = 0;
+        this.hasPriorityImage = false;
         const data = await this.getJSON(indexFile);
 
         if (data && Array.isArray(data.files)) {
@@ -26,8 +28,17 @@ class Blog extends Json {
                 }
             });
 
-            for (const file of data.files) {
-                await this.loadJSON(`${this.path}/${file}.json`);
+            const entries = data.files.map(file => this.getJSON(`${this.path}/${file}.json`)
+                .then(entry => ({ entry }))
+                .catch(error => {
+                    console.error('Error loading JSON —', error);
+                    return { entry: null };
+                }));
+            for (const entryPromise of entries) {
+                const { entry } = await entryPromise;
+                if (entry) {
+                    this.processData(entry);
+                }
             }
         }
     } catch (error) {
@@ -64,7 +75,11 @@ class Blog extends Json {
         const imageAlt = jsonData.imageAlts && jsonData.imageAlts[index]
           ? jsonData.imageAlts[index]
           : `${jsonData.name || 'Blog'} image`;
-        imageContent += `<img src="${jsonData.folderPath}${imageFilename}" loading="lazy" decoding="async" alt="${imageAlt}">`;
+        const isPriorityImage = !this.hasPriorityImage && index === 0;
+        if (isPriorityImage) {
+          this.hasPriorityImage = true;
+        }
+        imageContent += `<img src="${jsonData.folderPath}${imageFilename}" loading="${isPriorityImage ? 'eager' : 'lazy'}" fetchpriority="${isPriorityImage ? 'high' : 'auto'}" decoding="async" alt="${imageAlt}">`;
       });
     }
 

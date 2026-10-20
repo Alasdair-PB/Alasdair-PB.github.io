@@ -20,7 +20,7 @@ class Json extends HTMLElement {
           return cachedData;
       }
 
-      const storageKey = `json-cache:${cacheKey}`;
+      const storageKey = `json-cache:v4:${cacheKey}`;
       try {
           const storedData = sessionStorage.getItem(storageKey);
           if (storedData) {

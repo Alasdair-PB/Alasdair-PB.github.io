@@ -1,10 +1,9 @@
 {
   "files": [
     "blog/art/intro",
-    "blog/dissertation/intro",
     "blog/unreal/intro",
     "blog/unity/intro",
     "blog/newcastle/intro",
-    "blog/mouseBlockade/intro"
+    "blog/rogue/intro"
   ]
 }
