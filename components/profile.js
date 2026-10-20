@@ -8,9 +8,11 @@ class Profile extends Json {
         const jsonFolderPath = 'blog/' + window.location.href.split('/').pop();
 
         if (jsonFolderPath) {
-            this.loadJSON(`${jsonFolderPath}/intro.json`);
+            this.contentReady = this.loadJSON(`${jsonFolderPath}/intro.json`)
+                .then(() => this.dispatchContentReady());
         } else {
             console.error('Missing data-json-folder attribute.');
+            this.contentReady = Promise.resolve();
         }
       }
 
@@ -18,16 +20,21 @@ class Profile extends Json {
     processData(jsonData) {
         let htmlContent = `
             <link rel="stylesheet" href="index.css">  
-            <div class="intro">
-              <img src='${jsonData.folderPath}${jsonData.images[0]}'>
-              <h1 class="title">${jsonData.name}</h1>
-              <h2>About this project</h2>
-              <div class="arrow-text">
-                  ${jsonData.text}
+            <div class="profile-card">
+              <header class="profile-card-header">
+                <img src="${jsonData.folderPath}${jsonData.images[0]}" alt="${jsonData.imageAlt || `${jsonData.name || 'Project'} image`}">
+                <div class="profile-card-heading">
+                  <h1>${jsonData.name}</h1>
+                  ${jsonData.Software ? `<p class="profile-card-subtitle">${jsonData.Software}</p>` : ''}
+                </div>
+              </header>
+              <div class="profile-card-body">
+                <h2>About this project</h2>
+                <p class="bio-description">${jsonData.text}</p>
+                <p>${jsonData.description}</p>
+                ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? jsonData.ProjectLinks.map((link, index) => `
+                  <a class="profile-project-link" href="${link}">${jsonData.ProjectNames && jsonData.ProjectNames[index] ? jsonData.ProjectNames[index] : 'Project link'}</a>`).join('') : ''}
               </div>
-              <p> ${jsonData.description} </p>
-              ${jsonData.ProjectLinks && jsonData.ProjectLinks.length > 0 ? jsonData.ProjectLinks.map((link, index) => `
-                <a class="intro" href="${link}">${jsonData.ProjectNames && jsonData.ProjectNames[index] ? jsonData.ProjectNames[index] : 'Github Repo'}</a>`).join('') : ''}
             </div>
         `;
         this.shadowRoot.innerHTML += htmlContent;

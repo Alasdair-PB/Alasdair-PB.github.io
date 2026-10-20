@@ -1,33 +1,47 @@
 <body>
     <div class="main-content">
-        <div class="links">
+        <a class="skip-link visually-hidden" href="#main-content">Skip to main content</a>
+        <nav class="links" aria-label="Main navigation">
             <div class="home">
-                <a href="#/home" >
-                    <img src="misc/Img/art/home_logo.png" alt="Home Logo">
+                <a href="#/home" aria-label="Alasdair PB home">
+                    <img src="misc/Img/art/home_logo.svg" alt="">
                 </a>
             </div>
         
-            <div class="linked_text">
-                <select onchange="navigate(this.value)">
-                    <option value="#/home">Explore</option>
-                    <option value="#/unity">Unity</option>
-                    <option value="#/unreal">Unreal</option>
-                    <option value="#/rogue">Rogue</option>
-                    <option value="#/newcastle">Newcastle</option>
-                    <option value="#/mouseBlockade">Mouse_Blockade</option>
-                    <option value="#/art">Art</option>
-                </select>
+            <div class="route-links" role="group" aria-label="Portfolio sections">
+                <a href="#/unity" data-route="unity">Unity</a>
+                <a href="#/unreal" data-route="unreal">Unreal</a>
+                <a href="#/art" data-route="art">Art</a>
+                <details class="more-navigation">
+                    <summary>More</summary>
+                    <div class="more-navigation-menu">
+                        <a href="#/rogue" data-route="rogue">Rogue</a>
+                        <a href="#/newcastle" data-route="newcastle">Newcastle</a>
+                        <a href="#/mouseBlockade" data-route="mouseBlockade">Mouse Blockade</a>
+                    </div>
+                </details>
+            </div>
+
+            <div id="loading" role="status" aria-label="Loading page">
+                <div class="loading-bar" aria-hidden="true"></div>
             </div>
         
             <div class="linked_image">
-                <a href="mailto:alasdairpilmorebedford@gmail.com">
-                    <img src="misc/Img/art/mail.png">
+                <a href="mailto:alasdairpilmorebedford@gmail.com" aria-label="Email">
+                    <img src="misc/Img/art/mail.png" alt="">
                 </a>
-                <a href="https://www.instagram.com/alasdairpb/">
-                    <img src="misc/Img/art/insta_logo.png">
+                <a href="https://www.instagram.com/alasdairpb/" aria-label="Instagram">
+                    <img src="misc/Img/art/insta_logo.png" alt="">
                 </a>
-                <a href="https://www.linkedin.com/in/alasdair-pb/">
-                    <img src="misc/Img/art/linkedin_logo.png">
+                <a href="https://www.linkedin.com/in/alasdair-pb/" aria-label="LinkedIn">
+                    <img src="misc/Img/art/linkedin_logo.png" alt="">
                 </a>
             </div>
-        </div>
+        </nav>
+        <div class="banner" aria-hidden="true"></div>
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li class="breadcrumb-home" hidden><a href="#/home">Home</a></li>
+                <li><span class="breadcrumb-current" aria-current="page">Portfolio</span></li>
+            </ol>
+        </nav>

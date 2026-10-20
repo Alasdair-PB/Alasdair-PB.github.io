@@ -3,14 +3,15 @@ class Blog extends Json {
     super();
     this.reverseOrder = true;
     this.indexFile = '';
+    this.entryCount = 0;
   }
 
 
   async loadJSONFiles(indexFile) {
     try {
         this.indexFile = indexFile;
-        const response = await fetch(indexFile);
-        const data = await response.json();
+        this.entryCount = 0;
+        const data = await this.getJSON(indexFile);
 
         if (data && Array.isArray(data.files)) {
             data.files.sort((a, b) => {
@@ -20,56 +21,72 @@ class Blog extends Json {
                     const diff = valueA - valueB;
                     return this.reverseOrder ? diff : -diff;
                 } else {
-                    console.log("Invalid value found, no change in order.");
+                    console.log('Invalid value found, no change in order.');
                     return 0;
                 }
             });
 
             for (const file of data.files) {
-                await this.loadJSON(`${this.path}/${file}.json`); 
+                await this.loadJSON(`${this.path}/${file}.json`);
             }
         }
     } catch (error) {
-        console.error('Error loading JSON files list:', error);
+        console.error('Error loading JSON files list —', error);
     }
 }
 
   toggleOrder() {
-    console.log("Invalid value found, no change in order.");
+    console.log('Invalid value found, no change in order.');
     this.reverseOrder = !this.reverseOrder;
-    this.shadowRoot.innerHTML = ''; 
+    this.shadowRoot.innerHTML = '';
     this.loadJSONFiles(this.indexFile);
   }
 
 
   parseValue(valueString) {
-    const match = valueString.match(/\d+/); 
+    const match = valueString.match(/\d+/);
     if (match) {
         return parseInt(match[0], 10);
     } else {
-        console.error('Invalid value format:', valueString);
+        console.error('Invalid value format —', valueString);
         return null;
     }
   }
 
   
   processData(jsonData) {
-    let htmlContent = `
-      <link rel="stylesheet" href="index.css">
-      <div class="blog">
-    `;
-  
+    const imageSide = this.entryCount % 2 === 0 ? ' image-left' : '';
+    this.entryCount++;
+    const titleId = `blog-title-${this.entryCount}`;
+    let imageContent = '';
     if (jsonData.images && Array.isArray(jsonData.images)) {
-      jsonData.images.forEach(imageFilename => {
-        htmlContent += `<img src="${jsonData.folderPath}${imageFilename}">`;
+      jsonData.images.forEach((imageFilename, index) => {
+        const imageAlt = jsonData.imageAlts && jsonData.imageAlts[index]
+          ? jsonData.imageAlts[index]
+          : `${jsonData.name || 'Blog'} image`;
+        imageContent += `<img src="${jsonData.folderPath}${imageFilename}" loading="lazy" decoding="async" alt="${imageAlt}">`;
       });
     }
-  
+
+    let htmlContent = `
+      <link rel="stylesheet" href="index.css">
+      <article class="blog" aria-labelledby="${titleId}">
+        <header class="blog-header">
+          <div class="blog-heading">
+            <h2 id="${titleId}">${jsonData.name}</h2>
+            ${jsonData.subtitle ? `<p class="blog-subtitle">${jsonData.subtitle}</p>` : ''}
+          </div>
+        </header>
+        <div class="blog-content${imageContent ? ` has-images${imageSide}` : ''}">
+    `;
+
     htmlContent += `
-      <h2>${jsonData.name}</h2>
-      <hr>
-      <p>${jsonData.text}</p>
-      <p>Last updated: ${jsonData.date}</p>
+          <div class="blog-copy">
+            <p>${jsonData.text}</p>
+            <p>Last updated: ${jsonData.date}</p>
+          </div>
+          ${imageContent ? `<div class="blog-images">${imageContent}</div>` : ''}
+        </div>
     `;
   
     if (jsonData.Videos && Array.isArray(jsonData.Videos) && jsonData.Videos.length > 0) {
@@ -79,14 +96,14 @@ class Blog extends Json {
           const videoId = videoIdMatch[1];
           htmlContent += `
             <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/${videoId}" title="${jsonData.name} video" allowfullscreen loading="lazy"></iframe>
             </div>
           `;
         }
       });
     }
   
-    htmlContent += `</div>`;
+    htmlContent += `</article>`;
     this.shadowRoot.innerHTML += htmlContent;
   }
 }

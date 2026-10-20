@@ -19,21 +19,36 @@ class Project extends Json {
   }
   
   processData(jsonData) {
+    this.projectCount = (this.projectCount || 0) + 1;
+    let projectGrid = this.shadowRoot.querySelector(".project-grid");
+    if (!projectGrid) {
+      projectGrid = document.createElement("div");
+      projectGrid.classList.add("project-grid");
+      this.shadowRoot.appendChild(projectGrid);
+    }
+
     let textOverlay = document.createElement("div");
     textOverlay.classList.add("project-overlay");    
     textOverlay.classList.add("text-overlay");
 
-    textOverlay.style.backgroundImage = `url('${jsonData.folderPath}${jsonData.images[0]}')`;
-    textOverlay.innerHTML += `
-        <h2>${jsonData.Software}</h2>
-        <h2>${jsonData.name}</h2>
-        <div class="hide-on-mobile">
-          <p>${jsonData.text}</p>
+    textOverlay.style.setProperty("--project-image", `url('${jsonData.folderPath}${jsonData.images[0]}')`);
+    textOverlay.innerHTML = `
+        <div class="project-card-content">
+          <h2 id="project-title-${this.projectCount}">${jsonData.Software}</h2>
+          <h2>${jsonData.name}</h2>
+          <div class="hide-on-mobile">
+            <p class="project-card-description">
+              <span class="project-card-description-track">
+                <span>${jsonData.text}</span>
+                <span aria-hidden="true">${jsonData.text}</span>
+              </span>
+            </p>
+          </div>
         </div>
-        <a href="${jsonData.link}" id="myLink">See more</a>
+        <a class="project-card-link" href="${jsonData.link}" aria-label="See more about ${jsonData.name}">See more</a>
     `;
   
-    this.shadowRoot.appendChild(textOverlay);
+    projectGrid.appendChild(textOverlay);
   }
   
   

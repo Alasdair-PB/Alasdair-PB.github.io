@@ -15,12 +15,12 @@ class Card extends HTMLElement {
     render() {
         this.shadowRoot.innerHTML = `
             <link rel="stylesheet" href="index.css">
-            <div class="card">
+            <article class="card">
                 <h2>${this.title}</h2>
                 <p>${this.text}</p>
-                <img src=${this.image}>
+                <img src="${this.image}" loading="lazy" decoding="async" alt="${this.title || 'Project image'}">
                 ${this.blog ? `<a href="${this.blog}" class="blog-link">Read More</a>` : ''}
-            </div>
+            </article>
         `;
     }
 

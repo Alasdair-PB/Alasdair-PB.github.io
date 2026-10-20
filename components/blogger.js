@@ -5,7 +5,8 @@ class Blogger extends Json {
       }
 
     connectedCallback() {
-        const jsonFolderPath = 'blog/' + window.location.href.split('/').pop();
+        const route = window.location.hash.replace(/^#\/?/, '').trim();
+        const jsonFolderPath = route && route !== 'home' ? `blog/${route}` : 'blog';
         this.processData(jsonFolderPath);
       }
 
@@ -20,6 +21,10 @@ class Blogger extends Json {
             </blog-component>
         `;
         this.shadowRoot.innerHTML += htmlContent;
+        const blogComponent = this.shadowRoot.querySelector('blog-component');
+        this.contentReady = blogComponent.contentReady || new Promise(resolve => {
+            blogComponent.addEventListener('content-ready', resolve, { once: true });
+        });
     }
   
     static get observedAttributes() {
